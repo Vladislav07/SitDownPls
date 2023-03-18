@@ -1,0 +1,186 @@
+@import 'mixin';
+@import 'var';
+
+.about {
+  margin-bottom: 71px;
+
+  &__container {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding-top: 37px;
+    padding-bottom: 68px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: $color-bacground-dark;
+  }
+
+  &__wrapper {
+    max-width: 1290px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__title {
+    max-width: 1293px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    @include sectionTitle;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #cacaca;
+  }
+
+  &__img {
+    margin-bottom: 19px;
+  }
+
+  &__title__form {
+    @include formTitle;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    @include formInput;
+    width: 100%;
+    margin-right: 30px;
+    color: #cacaca;
+    background-color: #4a4a4a;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__input:hover:not(:focus)::placeholder {
+    color: $color-primary;
+  }
+
+  &__input:focus {
+    outline: 1px solid $color-primary;
+  }
+
+  &__btn {
+    @include btnPrimary;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  }
+
+  &__btn:hover:not(:focus) {
+    background-color: $color-accent;
+  }
+
+  &__btn:focus {
+    outline-color: #ce4307;
+    outline: 3px solid $color-primary;
+    outline-offset: -3px;
+  }
+
+  &__btn:active {
+    background-color: $color-active;
+  }
+}
+
+@media (max-width: $media-xl) {
+  .about {
+    &__container {
+      max-width: 1024px;
+      padding: 33px 30px 81px;
+    }
+
+    &__form {
+      flex-direction: column;
+      align-content: flex-start;
+    }
+
+    &__btn {
+      margin-right: auto;
+    }
+
+    &__wrapper {
+      max-width: 963px;
+    }
+
+    &__input {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__form {
+      max-width: 344px;
+    }
+  }
+}
+@media (max-width: $media-lg) {
+  .about {
+    &__container {
+      max-width: 768px;
+      padding: 33px 30px 63px;
+    }
+
+    &__btn {
+      margin-right: auto;
+    }
+
+    &__wrapper {
+      max-width: 714px;
+    }
+  }
+}
+
+@media (max-width: $media-sm) {
+  .about {
+    margin-bottom: 50px;
+
+    &__container {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__wrapper {
+      max-width: 278px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr max-content;
+      gap: 21px;
+    }
+
+    &__title {
+      @include sectionTitle-sm;
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__title__form {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__input {
+      padding: 13px 23px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__btn {
+      @include btnPrimary-sm;
+    }
+  }
+}

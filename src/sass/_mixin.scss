@@ -1,0 +1,106 @@
+@import 'var';
+
+@mixin background_image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin date {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #999;
+}
+
+@mixin backgroundImage($path) {
+  background-image: url($path);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin formInput {
+  padding: 15px 23px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+@mixin sectionTitle {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@mixin label {
+  position: absolute;
+  padding: 7px 15px;
+  background-color: #202020;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@mixin formTitle {
+  font-family: 'TTFirsNeue';
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin sectionTitle {
+  font-family: 'TTFirsNeue';
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+@mixin btnReset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin label-sm {
+  top: 5px;
+  right: 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@mixin btnPrimary {
+  padding: 15px 22px;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #fff;
+  background-color: $color-primary;
+  cursor: pointer;
+}
+
+@mixin btnPrimary-sm {
+  padding: 12px 22px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+@mixin sectionTitle-sm {
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0;
+}

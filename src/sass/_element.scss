@@ -1,0 +1,68 @@
+@import 'var';
+
+.choices[data-type*='select-one']::after {
+  content: '';
+  height: 0;
+  width: 0;
+  display: block;
+  border: none;
+  background-image: url('/img/select_icon.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5.5px;
+  top: 50%;
+  height: 8px;
+  width: 13px;
+  margin-top: -2.5px;
+  pointer-events: none;
+}
+
+.choices__item--selectable {
+  color: $color-primary;
+  font-size: 16px;
+}
+
+.choices__inner {
+  border: none;
+  display: inline-block;
+  min-width: 90px;
+  background-color: #f7f7f7;
+  color: $color-primary;
+  padding: 0;
+  padding-right: 10px;
+  vertical-align: text-bottom;
+}
+
+.choices__list--dropdown {
+  padding: 16px 16px;
+}
+
+.choices__item.choices__item--choice.choices__item--selectable {
+  color: $color-black;
+  font-size: 14px;
+  line-height: 130%;
+  padding: 0;
+}
+
+.region {
+  .choices__inner {
+    min-width: 90px;
+    min-height: 23px;
+    color: $color-primary;
+    padding: 0;
+    padding-right: 10px;
+  }
+}
+
+.header__category {
+  height: 60px;
+  width: 300px;
+  .choices {
+    height: 100%;
+  }
+  .choices__outer {
+    color: $color-primary;
+    padding: 0;
+    padding-right: 10px;
+  }
+}
