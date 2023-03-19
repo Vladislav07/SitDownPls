@@ -1,5 +1,5 @@
 
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".hero__swiper", {
     slidesPerView: 1,
     loop: true,
     // пагинация
@@ -7,12 +7,18 @@ const swiper = new Swiper(".swiper-container", {
       el: ".swiper-pagination",
       clickable: true,
     },
+  });
+
+  const swiperOffers = new Swiper(".offers__container", {
+    slidesPerView: 1,
+    loop: true,
     // навигация
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
+
 
 // let burger = document.querySelector(".burger");
 // let menu = document.querySelector(".header__nav");
