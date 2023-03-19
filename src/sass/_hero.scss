@@ -1,10 +1,11 @@
 @import 'mixin';
+@import 'var';
 
 .hero {
-  margin-bottom: 68px;
+  margin-bottom: 70px;
 
   &__container {
-    padding: 0;
+    padding: 80px 320px;
     background-image: url('/img/hero.jpg');
     background-repeat: no-repeat;
     height: 400px;
@@ -13,35 +14,35 @@
 
   &__wrapper {
     width: 496px;
-    padding: 80px 320px;
+    
+  }
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: $color-grey;
+  }
 
-    &__title {
-      display: inline-block;
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 65px;
-      color: $color-grey;
-    }
+  &__btn {
+    @include btnPrimary;
+    flex-wrap: nowrap;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  }
 
-    &__btn {
-      @include btnPrimary;
-      transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
-    }
+  &__btn:hover:not(:focus) {
+    background-color: $color-accent;
+  }
 
-    &__btn:hover:not(:focus) {
-      background-color: $color-accent;
-    }
+  &__btn:focus {
+    outline-color: #ce4307;
+    outline: 3px solid $color-primary;
+    outline-offset: -3px;
+  }
 
-    &__btn:focus {
-      outline-color: #ce4307;
-      outline: 3px solid $color-primary;
-      outline-offset: -3px;
-    }
-
-    &__btn:active {
-      background-color: $color-active;
-    }
+  &__btn:active {
+    background-color: $color-active;
   }
 }
 

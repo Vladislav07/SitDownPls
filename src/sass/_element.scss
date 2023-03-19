@@ -66,3 +66,60 @@
     padding-right: 10px;
   }
 }
+
+
+
+.swiper {
+  border-radius: 32px;
+}
+
+.swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ .swiper-slide {
+  background-position: center;
+  background-size: cover;
+   background-repeat: no-repeat;
+ } 
+
+.swiper-slide--one {
+  background-image: url("../img/hero.webp");
+}
+
+.swiper-slide--two {
+  background-image: url("../img/hero-pic-1920-2.webp");
+}
+
+.swiper-slide--three {
+  background-image: url("../img/hero-pic-1920-3.webp");
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px;
+}
+
+.swiper-container .hero__switch {
+  bottom: 30px;
+  width: 25px;
+  height: 25px;
+  outline: 1px solid red;
+}

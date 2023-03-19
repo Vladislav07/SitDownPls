@@ -1,3 +1,19 @@
+
+const swiper = new Swiper(".swiper-container", {
+    slidesPerView: 1,
+    loop: true,
+    // пагинация
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // навигация
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 // let burger = document.querySelector(".burger");
 // let menu = document.querySelector(".header__nav");
 // let menuLinks=document.querySelectorAll(".nav__link");
