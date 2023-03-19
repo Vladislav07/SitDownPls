@@ -69,14 +69,16 @@
 
 
 
-.swiper {
-  border-radius: 32px;
+.swiper-container {
+ height: 400px;
 }
 
 .swiper-wrapper {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 
  .swiper-slide {
@@ -85,24 +87,8 @@
    background-repeat: no-repeat;
  } 
 
-.swiper-slide--one {
-  background-image: url("../img/hero.webp");
-}
 
-.swiper-slide--two {
-  background-image: url("../img/hero-pic-1920-2.webp");
-}
 
-.swiper-slide--three {
-  background-image: url("../img/hero-pic-1920-3.webp");
-}
-
-.swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  opacity: 1;
-}
 .swiper-pagination-bullet-active {
   background-color: #fff;
 }
@@ -121,5 +107,16 @@
   bottom: 30px;
   width: 25px;
   height: 25px;
-  outline: 1px solid red;
+  outline: none;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+   width: 14px;
+  height: 14px;
+  background-color: $color-black;
+  opacity: 0.5;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active{
+  opacity: 1;
 }

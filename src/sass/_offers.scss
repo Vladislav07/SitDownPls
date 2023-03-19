@@ -1,0 +1,17 @@
+@import 'mixin';
+@import 'var';
+
+.offers {
+  margin-bottom: 70px;
+
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 296px 624px 296px;
+    grid-template-rows: 1;
+  }
+}
