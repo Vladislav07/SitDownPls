@@ -35,10 +35,10 @@
 
 @mixin label {
   position: absolute;
-  padding: 7px 15px;
-  background-color: #202020;
+  padding: 7px 19px;
+  background-color: $color-secondary;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 19px;
   font-weight: 400;
   color: #fff;
 }
