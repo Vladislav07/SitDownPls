@@ -28,8 +28,8 @@
 }
 
 @mixin sectionTitle {
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 32px;
+  line-height: 32px;
   font-weight: 400;
 }
 
@@ -56,13 +56,13 @@
   justify-content: space-between;
 }
 
-@mixin sectionTitle {
-  font-family: 'TTFirsNeue';
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  letter-spacing: 1.3px;
-}
+// @mixin sectionTitle {
+//   font-family: 'TTFirsNeue';
+//   font-size: 22px;
+//   line-height: 24px;
+//   font-weight: 700;
+//   letter-spacing: 1.3px;
+// }
 
 @mixin btnReset {
   border: none;

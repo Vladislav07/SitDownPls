@@ -1,0 +1,29 @@
+@import 'mixin';
+@import 'var';
+
+.anons {
+  &__container {
+    width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url('../img/Anons.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 320px;
+  }
+
+  &__title {
+    width: 508px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    span {
+        font-weight: 900;
+        color: $color-gold;
+    }
+  }
+
+  &__btn {
+    @include btnPrimary;
+  }
+}

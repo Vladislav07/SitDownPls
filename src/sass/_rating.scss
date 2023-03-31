@@ -1,26 +1,29 @@
 @import 'mixin';
 @import 'var';
 
-.projects {
+.rating {
   margin-bottom: 68px;
 
   &__container {
-    max-width: 1293px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__title {
     @include sectionTitle;
-    color: $color-bacground-dark;
-    margin-bottom: 16px;
+    color: $color-black;
+    margin-bottom: 26px;
   }
 
   &__list {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 300px 300px;
+    grid-template-columns: repeat(4, 296px);
+    grid-template-rows: 426px 426px;
+    margin-bottom: 32px;
   }
 
   &__item {
@@ -28,103 +31,59 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: $color-grey_ligth;
     img {
-      margin-bottom: 15px;
+      padding-bottom: 16px;
     }
   }
 
-  &__item__one {
-    grid-column: 1 / span 2;
-    grid-row: 1;
+  &__content {
+    padding: 30px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  &__item__second {
-    grid-column: 3 / span 2;
-    grid-row: 1;
-  }
-
-  &__item__third {
-    grid-column: 5 / span 2;
-    grid-row: 1;
-  }
-
-  &__item__fourth {
-    grid-column: 7 / span 6;
-    grid-row: 1;
-
-    @include backgroundImage('/img/projects_background_01.jpg');
-    color: #fff;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    padding-top: 23px;
-  }
-
-  &__item__fifth {
-    grid-column: 1 / span 6;
-    grid-row: 2;
-    @include backgroundImage('/img/projects_background_02.jpg');
-    color: #fff;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    padding-top: 14px;
-  }
-
-  &__item__fifth > &__calendar {
-    margin-bottom: 8px;
-  }
-
-  &__item__sixth {
-    grid-column: 7 / span 3;
-    grid-row: 2;
-  }
-
-  &__item__seventh {
-    grid-column: 10 / span 3;
-    grid-row: 2;
-  }
-
-  &__title__advert {
-    font-family: 'TTFirsNeue';
-    max-width: 250px;
+  &__name {
+    margin-bottom: 24px;
+    font-weight: 400;
     font-size: 24px;
-    line-height: 24px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #fff;
+    line-height: 130%;
+    color: $color-black;
   }
 
-  &__descr {
-    max-width: 295px;
-    margin-bottom: auto;
-    font-size: 15px;
-    line-height: 22px;
-    color: $color-bacground-dark;
+  &__price {
+    padding-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-grey_shade;
   }
 
-  &__descr__big {
-    color: #fff;
+  &__label{
+    position: absolute;
+    top:33px;
+    left: 30px;
   }
 
-  &__date {
-    color: #999;
+  &__star {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-secondary;
   }
 
-  &__label {
-  
+  &__btn__bottom{
+    @include btnPrimary;
+    align-self: center;
   }
 
   &__btn {
-    margin-right: auto;
-    padding: 13px 20px;
-    outline: 3px solid $color-primary;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 700;
-    color: #fff;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
+    @include btnSecondary;
   }
 
   &__btn:hover:not(:focus) {
@@ -149,12 +108,6 @@
     line-height: 22px;
     color: $color-bacground-dark;
   }
-}
-
-.date-created {
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 400;
 }
 
 @media (max-width: $media-xl) {
