@@ -1,24 +1,22 @@
+ const swiper = new Swiper('.hero__swiper', {
+  slidesPerView: 1,
+  loop: true,
+  // пагинация
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
-const swiper = new Swiper(".hero__swiper", {
-    slidesPerView: 1,
-    loop: true,
-    // пагинация
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
-  const swiperOffers = new Swiper(".offers__container", {
-    slidesPerView: 1,
-    loop: true,
-    // навигация
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
+ const swiperOffers = new Swiper('.offers__container', {
+  slidesPerView: 1,
+  loop: true,
+  // навигация
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // let burger = document.querySelector(".burger");
 // let menu = document.querySelector(".header__nav");
@@ -30,7 +28,7 @@ const swiper = new Swiper(".hero__swiper", {
 //   menu.classList.toggle("header__nav--active");
 //   document.body.classList.toggle('stop-scroll');
 //   requestAnimationFrame(Play);
-  
+
 // });
 
 // menuLinks.forEach(function(el){
@@ -58,18 +56,17 @@ const swiper = new Swiper(".hero__swiper", {
 
 // })
 
-
 // const block = document.querySelector('.nav');
 
 //   const frameBlock = new KeyframeEffect(
 //     block,
 //     [
 //        {
-//         transform: 'translate(0,-100vh)', 
+//         transform: 'translate(0,-100vh)',
 //       },
 //       {
 //         transform: 'translate(0, 0)',
-//       },  
+//       },
 //     ],
 //     { duration: 1000 }
 //   );
@@ -78,7 +75,3 @@ const swiper = new Swiper(".hero__swiper", {
 //   function Play() {
 //     animation.play();
 //   }
- 
-
- 
-

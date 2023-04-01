@@ -2,59 +2,83 @@
 @import 'var';
 
 .footer {
+
   &__container {
     max-width: 1900px;
     margin: 0 auto;
-    padding-top: 26px;
-    padding-bottom: 16px;
-    background-color: $color-bacground-dark;
+    background-color: #eaeaea;
+
   }
+
   &__wrapper {
-    max-width: 1290px;
-    display: grid;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-template-rows: 1fr;
+    max-width: 1280px;
+    display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
+
   &__item {
-    &__one {
-      display: flex;
-      flex-direction: column;
-    }
-    &__two {
-      margin-right: 50px;
-      justify-self: center;
-      max-width: 361px;
-      font-size: 16px;
-      line-height: 22px;
-      font-weight: 400;
-      color: #cacaca;
-    }
-    &__three {
-      justify-self: end;
-      font-size: 16px;
-      line-height: 22px;
-      font-weight: 400;
-      color: #cacaca;
-      width: 161px;
-    }
+    margin-right: auto;
+    justify-self: flex-start;
   }
+
+  &__logo {
+    margin-bottom: 31px;
+  }
+
   &__social {
     display: flex;
-    justify-content: center;
-    svg:not(:last-child) {
+    a:not(:last-child) {
       margin-right: 20px;
     }
   }
-  &__sign {
-    font-family: 'TTFirsNeue';
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #e9e9e9;
+
+  .refs {
+    display: flex;
+    justify-content: space-between;
+
+    &__section:not(:last-child) {
+      margin-right: 112px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+    }
+
+    &__item:first-child {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: $color-black;
+    }
+
+    &__item:not(:first-child) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-grey;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
+
+  &__sign {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: $color-grey;
+    background-color: $color-grey_ligth;
+
+  }
+
   &__title {
     margin-bottom: 8px;
     font-size: 16px;
