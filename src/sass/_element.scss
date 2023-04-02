@@ -17,6 +17,10 @@
   pointer-events: none;
 }
 
+.choices[data-type*=select-one] .choices__inner {
+   padding-bottom: 0; 
+}
+
 .choices__item--selectable {
   color: $color-primary;
   font-size: 16px;
@@ -24,13 +28,12 @@
 
 .choices__inner {
   border: none;
-  display: inline-block;
-  min-width: 90px;
-  background-color: #f7f7f7;
-  color: $color-primary;
+  display: inline-flex;
+  height: 100%;
   padding: 0;
-  padding-right: 10px;
-  vertical-align: text-bottom;
+  align-content: center;
+  flex-wrap: wrap;
+  
 }
 
 .choices__list--dropdown {
@@ -50,7 +53,7 @@
     min-height: 23px;
     color: $color-primary;
     padding: 0;
-    padding-right: 10px;
+  //  padding-right: 10px;
   }
 }
 
@@ -63,7 +66,7 @@
   .choices__outer {
     color: $color-primary;
     padding: 0;
-    padding-right: 10px;
+  //  padding-right: 10px;
   }
 }
 
