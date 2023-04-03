@@ -11,18 +11,18 @@
 
  const swiperOffers = new Swiper('.offers__container', {
   slidesPerView: 1,
-  loop: true,
+  //loop: true,
   // навигация
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.offers__container > .swiper-button-next',
+    prevEl: '.offers__container > .swiper-button-prev',
   },
 });
 
 // let burger = document.querySelector(".burger");
 // let menu = document.querySelector(".header__nav");
 // let menuLinks=document.querySelectorAll(".nav__link");
-// let isState=false;
+// let isState=false; 
 
 // burger.addEventListener("click", function () {
 //   burger.classList.toggle("burger__active");
