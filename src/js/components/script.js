@@ -9,6 +9,8 @@
   },
 });
 
+
+
  const swiperOffers = new Swiper('.offers__container', {
   slidesPerView: 1,
   //loop: true,
@@ -16,6 +18,16 @@
   navigation: {
     nextEl: '.offers__container > .swiper-button-next',
     prevEl: '.offers__container > .swiper-button-prev',
+  },
+});
+
+const swiperUseful = new Swiper('.useful__container', {
+  slidesPerView: 1,
+  //loop: true,
+  // навигация
+  navigation: {
+    nextEl: '.useful__container > .swiper-button-next',
+    prevEl: '.useful__container > .swiper-button-prev',
   },
 });
 
