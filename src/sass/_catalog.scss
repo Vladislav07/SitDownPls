@@ -1,0 +1,10 @@
+@import 'mixin';
+@import 'var';
+
+.catalog {
+
+    &__container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

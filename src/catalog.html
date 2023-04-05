@@ -20,10 +20,21 @@
 
   <body>
     @@include('./parts/header.html')
+    <section id="catalog" class="catalog">
+       <div class="catalog__container">
+        @@include('./parts/breadcrumb.html')
+        <div class="catalog__wrapper">
+          @@include('./parts/filter.html')
+        </div>
+        <div class="catalog__pagination">
+          <a href="#">1</a>
+          <a href="#">2</a>
+        </div>
+       </div>
+    </section>
     @@include('./parts/footer.html')
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="js/main.js" type="application/javascript"></script>
-
   </body>
 </html>

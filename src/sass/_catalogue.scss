@@ -1,0 +1,111 @@
+@import 'mixin';
+@import 'var';
+
+.catalogue {
+  margin-bottom: 68px;
+
+  &__container {
+    max-width: 952px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    @include sectionTitle;
+    color: $color-black;
+    margin-bottom: 26px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 296px);
+    grid-template-rows: 426px 426px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: $color-grey_ligth;
+    img {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__content {
+    padding: 30px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__name {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: $color-black;
+  }
+
+  &__price {
+    padding-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-grey_shade;
+  }
+
+  &__label{
+    position: absolute;
+    top:33px;
+    left: 30px;
+  }
+
+  &__star {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-secondary;
+  }
+
+  &__btn__bottom{
+    @include btnPrimary;
+    align-self: center;
+  }
+
+  &__btn {
+    @include btnSecondary;
+  }
+
+  &__btn:hover:not(:focus) {
+    background-color: $color-accent;
+    outline: none;
+  }
+
+  &__btn:focus {
+    outline-color: #ce4307;
+    background-color: $color-primary;
+  }
+
+  &__btn:active {
+    background-color: $color-active;
+  }
+
+  &__descr__alternative {
+    display: none;
+    max-width: 295px;
+    margin-bottom: auto;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-bacground-dark;
+  }
+}
