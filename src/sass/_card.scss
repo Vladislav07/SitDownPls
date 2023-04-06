@@ -1,43 +1,18 @@
 @import 'mixin';
 @import 'var';
 
-.catalogue {
-  margin-bottom: 68px;
-
-  &__container {
-    max-width: 952px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  &__title {
-    @include sectionTitle;
-    color: $color-black;
-    margin-bottom: 26px;
-  }
-
-  &__list {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 296px);
-    grid-template-rows: 426px 426px;
-    margin-bottom: 32px;
-  }
-
-  &__item {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    border-radius: 10px;
-    background-color: $color-grey_ligth;
-    img {
-      padding-bottom: 16px;
-    }
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  height: 420px;
+  background-color: $color-grey_ligth;
+  img {
+    padding-bottom: 16px;
   }
 
   &__content {
@@ -64,20 +39,13 @@
     color: $color-grey_shade;
   }
 
-  &__label{
+  &__rating {
     position: absolute;
-    top:33px;
+    top: 33px;
     left: 30px;
   }
 
-  &__star {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    color: $color-secondary;
-  }
-
-  &__btn__bottom{
+  &__btn__bottom {
     @include btnPrimary;
     align-self: center;
   }
@@ -108,4 +76,11 @@
     line-height: 22px;
     color: $color-bacground-dark;
   }
+}
+
+.star {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: $color-secondary;
 }

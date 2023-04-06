@@ -1,104 +1,104 @@
-@import 'mixin';
-@import 'var';
+// @import 'mixin';
+// @import 'var';
 
-.modal {
-  display: inline-block;
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 0;
-  padding: 175px 60px;
-  padding-right: 0;
-  background-color: rgba(32, 32, 32, 0.85);
+// .modal {
+//   display: inline-block;
+//   position: absolute;
+//   content: '';
+//   left: 0;
+//   bottom: 0;
+//   padding: 175px 60px;
+//   padding-right: 0;
+//   background-color: rgba(32, 32, 32, 0.85);
 
-  &__btn__close {
-    @include btnReset;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
+//   &__btn__close {
+//     @include btnReset;
+//     position: absolute;
+//     top: 20px;
+//     right: 20px;
+//   }
 
-  &__content {
-    max-width: 300px;
-  }
+//   &__content {
+//     max-width: 300px;
+//   }
 
-  &__title {
-    margin-bottom: 5px;
-    font-family: 'TTFirsNeue';
-    font-size: 24px;
-    line-height: 22px;
-    font-weight: 400;
-    color: #fff;
-  }
+//   &__title {
+//     margin-bottom: 5px;
+//     font-family: 'TTFirsNeue';
+//     font-size: 24px;
+//     line-height: 22px;
+//     font-weight: 400;
+//     color: #fff;
+//   }
 
-  &__text {
-    margin-bottom: 2px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #cacaca;
-  }
+//   &__text {
+//     margin-bottom: 2px;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 28px;
+//     color: #cacaca;
+//   }
 
-  &__phone {
-    display: flex;
-    align-items: center;
-    font-family: 'TTFirsNeue';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    color: $color-primary;
-  }
-}
+//   &__phone {
+//     display: flex;
+//     align-items: center;
+//     font-family: 'TTFirsNeue';
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 21px;
+//     color: $color-primary;
+//   }
+// }
 
-@media (max-width: $media-xl) {
-  .modal {
-    padding: 25px 30px;
-    padding-bottom: 20px;
+// @media (max-width: $media-xl) {
+//   .modal {
+//     padding: 25px 30px;
+//     padding-bottom: 20px;
 
-    &__content {
-      max-width: 301px;
-    }
-    &__phone {
-      display: inline-block;
-    }
+//     &__content {
+//       max-width: 301px;
+//     }
+//     &__phone {
+//       display: inline-block;
+//     }
 
-    &__text {
-      display: inline;
-    }
-    &__phone > svg {
-      vertical-align: middle;
-    }
-  }
-}
+//     &__text {
+//       display: inline;
+//     }
+//     &__phone > svg {
+//       vertical-align: middle;
+//     }
+//   }
+// }
 
-@media (max-width: $media-lg) {
-  .modal {
-    &__content {
-      max-width: 410px;
-    }
-  }
-}
+// @media (max-width: $media-lg) {
+//   .modal {
+//     &__content {
+//       max-width: 410px;
+//     }
+//   }
+// }
 
-@media (max-width: $media-sm) {
-  .modal {
-    padding: 28px 19px 7px;
+// @media (max-width: $media-sm) {
+//   .modal {
+//     padding: 28px 19px 7px;
 
-    &__title {
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 10px;
-    }
+//     &__title {
+//       font-size: 18px;
+//       line-height: 22px;
+//       margin-bottom: 10px;
+//     }
 
-    &__text {
-      font-size: 14px;
-      line-height: 18px;
-      display: inline-block;
-      margin-bottom: 9px;
-    }
+//     &__text {
+//       font-size: 14px;
+//       line-height: 18px;
+//       display: inline-block;
+//       margin-bottom: 9px;
+//     }
 
-    &__phone {
-      font-size: 14px;
-      line-height: 18px;
-    }
-  }
-}
+//     &__phone {
+//       font-size: 14px;
+//       line-height: 18px;
+//     }
+//   }
+// }
