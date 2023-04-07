@@ -1,0 +1,25 @@
+<section id="products" class="products">
+  <div class="container">
+    <div class="swiper">
+      <div class="swiper-container products__container">
+        <h2 class="products__title">Похожие товары</h2>
+        <div class="swiper-button-prev">
+          @@include('./swiper_btn_left.html')
+        </div>
+        <div class="swiper-button-next">
+          @@include('./swiper_btn_rigth.html')
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide products__slide__one">
+            <ul class="products__card">
+              @@include('./card.html')
+            </ul>
+          </div>
+          <div class="swiper-slide products__slide__two">
+            <ul class="products__card"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

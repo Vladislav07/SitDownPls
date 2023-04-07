@@ -57,6 +57,7 @@ h2,
 h3,
 h4,
 h5,
+ul,
 p {
   margin: 0;
   padding: 0;
@@ -69,6 +70,7 @@ a {
 
 img {
   max-width: 100%;
+  margin: 0;
 }
 
 .btn-reset {
@@ -99,6 +101,10 @@ label {
 
 .stop-scroll {
   overflow: hidden;
+}
+
+body {
+  position: relative;
 }
 
 

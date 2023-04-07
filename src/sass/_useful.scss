@@ -37,22 +37,21 @@
   }
 }
 
-.card {
+.article {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   padding: 0;
   border-radius: 10px;
   background-color: $color-grey_ligth;
-
 
   &__content {
     padding: 30px;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+    justify-content: space-between;
   }
 
   &__descr {

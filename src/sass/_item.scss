@@ -1,0 +1,133 @@
+@import 'mixin';
+@import 'var';
+
+.item {
+  margin-bottom: 70px;
+
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 624px 1fr;
+    grid-template-rows: 749px;
+    column-gap: 32px;
+  }
+
+  &__left {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+
+  &__rigth {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__photoTop {
+    margin-bottom: 32px;
+    height: 81px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: $color-grey_ligth;
+  }
+
+  &__titleDescr {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: $color-black;
+  }
+
+  &__descr {
+    margin-bottom: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: $color-black;
+  }
+
+  &__photoBottom {
+  }
+
+  &__rating {
+    position: absolute;
+    top: 33px;
+    left: 30px;
+  }
+
+  &__name {
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #333;
+  }
+
+  &__alt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: $color-grey;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: $color-black;
+  }
+
+  &__btn__buy {
+    margin-right: auto;
+    @include btnPrimary;
+  }
+
+  &__btn__toBasket {
+    margin-right: auto;
+    @include btnSecondary;
+    border: none;
+  }
+
+  &__records {
+    padding: 0;
+  }
+}
+
+.record {
+  display: flex;
+  align-items: baseline;
+
+  &__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: $color-grey;
+  }
+
+  &__separator {
+    font-size: 2px;
+    line-height: 0px;
+    letter-spacing: 0.5em;
+    color: $color-grey;
+  }
+
+  &__value {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: $color-black;
+  }
+}
