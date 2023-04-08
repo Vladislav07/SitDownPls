@@ -73,7 +73,7 @@
   }
 
   &__btn:hover:not(:focus) {
-    background-color: $color-accent;
+    background-color: red;
   }
 
   &__btn:focus {
@@ -83,7 +83,7 @@
   }
 
   &__btn:active {
-    background-color: $color-active;
+    background-color: red;
   }
 }
 

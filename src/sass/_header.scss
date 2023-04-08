@@ -9,7 +9,6 @@
     max-width: 1900px;
     margin: 0 auto;
     padding: 0;
-    outline: 1px solid blue;
 
     &::after {
       content: '';
@@ -40,16 +39,12 @@
 
     .choices {
       .choices__list.choices__list--dropdown {
-   
-    
         z-index: 10;
         border: 2px solid $color-grey_ligth;
         border-radius: 10px;
         width: max-content;
         .choices__list {
-      
-
-         .choices__item {
+          .choices__item {
             margin-bottom: 10px;
             font-weight: 400;
             font-size: 16px;
@@ -58,8 +53,8 @@
           }
         }
       }
+    }
   }
-}
 
   &__phone {
     grid-column: 2;
@@ -124,7 +119,7 @@
           }
         }
       }
-  
+
       .choices__inner {
         min-width: 90px;
         background-color: transparent;
@@ -145,10 +140,7 @@
     grid-column: 10 / span 3;
     grid-row: 3;
     justify-self: flex-end;
-
-
   }
-
 }
 
 .nav {
@@ -222,6 +214,95 @@
   justify-self: flex-start;
 }
 
+@media (max-width: $media-xl) {
+  .header {
+    &__container {
+      max-width: 1024px;
+    }
+
+    &__wrapper {
+      max-width: 952px;
+      grid-template-rows: 60px 50px 92px 60px;
+    }
+
+    &__phone {
+      grid-column: 10;
+      grid-row: 1;
+    }
+
+    &__service {
+      grid-column: 1 / span 9;
+      grid-row: 2;
+    }
+
+    &__logo {
+      grid-column: 1 / span 2;
+      grid-row: 3;
+    }
+
+    &__nav {
+      grid-column: 3 / span 10;
+      grid-row: 3;
+    }
+
+    &__search {
+      grid-column: 1 / span 8;
+      grid-row: 4;
+    }
+
+    &__category {
+      grid-column: 9 / span 4;
+      grid-row: 4;
+    }
+
+    &__personal-area {
+      grid-column: 10 / span 3;
+      grid-row: 2;
+    }
+  }
+
+  .nav {
+    &__item:not(:last-child) {
+      margin-right: 41px;
+    }
+  }
+}
+
+@media (max-width: $media-lg) {
+  .header {
+    margin-bottom: 68px;
+
+    &__container {
+      max-width: 768px;
+    }
+
+    &__wrapper {
+      max-width: 714px;
+      grid-template-rows: 289px 133px;
+    }
+  }
+}
+
+@media (max-width: $media-sm) {
+  .header {
+    margin-bottom: 49px;
+
+    &__container {
+      max-width: 320px;
+    }
+
+    &__wrapper {
+      max-width: 278px;
+    }
+
+    &__wrapper {
+      gap: 34px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 422px 237px 105px;
+    }
+  }
+}
+
 // &__logo {
 //   grid-column: 2;
 //   grid-row: 2;
@@ -259,16 +340,16 @@
 //   }
 
 //   &__burger:active .burger__line {
-//     background-color: $color-active;
+//     background-color: $color-primary;
 //   }
 
 //   &__burger:active::after {
-//     background-color: $color-active;
+//     background-color: $color-primary;
 //     width: 33%;
 //   }
 
 //   &__burger:active::before {
-//     background-color: $color-active;
+//     background-color: $color-primary;
 //   }
 
 //   &__burger:active {
@@ -316,7 +397,7 @@
 //   }
 
 //   &__request:hover:not(:focus) {
-//     border-color: $color-accent;
+//     border-color: $color-primary_ligth;
 //   }
 
 //   &__request:focus {
@@ -324,7 +405,7 @@
 //   }
 
 //   &__request:active {
-//     border-color: $color-active;
+//     border-color: $color-primary;
 //   }
 
 //   &__request:focus::placeholder {
@@ -372,16 +453,16 @@
 
 //   &__close-search:focus {
 //     outline-offset: 2px;
-//     outline: 2px solid $color-accent;
+//     outline: 2px solid $color-primary_ligth;
 //   }
 
 //   &__close-search:active .header__icon__close {
-//     border-color: $color-active;
+//     border-color: $color-primary;
 //   }
 
 //   &__close-search:active .header__icon__close::before,
 //   &__close-search:active .header__icon__close::after {
-//     background-color: $color-active;
+//     background-color: $color-primary;
 //   }
 
 //   &__close-search:active {
@@ -423,15 +504,15 @@
 //   }
 
 //   &__link:focus {
-//     background-color: $color-accent;
+//     background-color: $color-primary_ligth;
 //   }
 
 //   &__link:hover:not(:focus) {
-//     color: $color-accent;
+//     color: $color-primary_ligth;
 //   }
 
 //   &__link:active {
-//     color: $color-active;
+//     color: $color-primary;
 //   }
 // }
 
@@ -456,7 +537,7 @@
 //   }
 
 //   &__line:active {
-//     background-color: $color-active;
+//     background-color: $color-primary;
 //     width: 66%;
 //   }
 
@@ -494,19 +575,19 @@
 //   }
 
 //   &:hover:not(:focus) svg rect {
-//     fill: $color-accent;
+//     fill: $color-primary_ligth;
 //   }
 
 //   &:hover:not(:focus) svg circle {
-//     stroke: $color-accent;
+//     stroke: $color-primary_ligth;
 //   }
 
 //   &:active svg rect {
-//     fill: $color-active;
+//     fill: $color-primary;
 //   }
 
 //   &:active svg circle {
-//     stroke: $color-active;
+//     stroke: $color-primary;
 //   }
 // }
 

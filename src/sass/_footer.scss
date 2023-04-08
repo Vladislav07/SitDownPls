@@ -2,12 +2,10 @@
 @import 'var';
 
 .footer {
-
   &__container {
     max-width: 1900px;
     margin: 0 auto;
     background-color: #eaeaea;
-
   }
 
   &__wrapper {
@@ -76,7 +74,6 @@
     font-weight: 400;
     color: $color-grey;
     background-color: $color-grey_ligth;
-
   }
 
   &__title {
@@ -87,15 +84,15 @@
   }
 
   &__icon:hover:not(:focus) path {
-    fill: $color_standart;
+    fill: $color-primary;
   }
 
   &__icon:focus path {
-    fill: $color-accent;
+    fill: $color-primary_ligth;
   }
 
   &__icon:active path {
-    fill: $color-active;
+    fill: $color-primary;
   }
 }
 

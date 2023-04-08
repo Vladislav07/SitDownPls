@@ -75,7 +75,7 @@
   }
 
   &__btn:hover:not(:focus) {
-    background-color: $color-accent;
+    background-color: $color-primary_ligth;
   }
 
   &__btn:focus {
@@ -85,7 +85,7 @@
   }
 
   &__btn:active {
-    background-color: $color-active;
+    background-color: $color-primary;
   }
 
   &__convention {
@@ -93,11 +93,10 @@
     font-size: 14px;
     line-height: 19px;
     color: $color-black;
-    span{
+    span {
       padding-left: 5px;
       color: $color-primary;
     }
-    
   }
 }
 

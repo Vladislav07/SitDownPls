@@ -55,7 +55,7 @@
   }
 
   &__btn:hover:not(:focus) {
-    background-color: $color-accent;
+    background-color: $color-primary_ligth;
     outline: none;
   }
 
@@ -65,7 +65,7 @@
   }
 
   &__btn:active {
-    background-color: $color-active;
+    background-color: $color-primary;
   }
 
   &__descr__alternative {
@@ -74,7 +74,7 @@
     margin-bottom: auto;
     font-size: 16px;
     line-height: 22px;
-    color: $color-bacground-dark;
+    color: $color-grey_ligth;
   }
 }
 

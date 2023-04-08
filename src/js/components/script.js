@@ -33,11 +33,12 @@ const swiperUseful = new Swiper('.useful__container', {
 const modal = document.querySelector('#openModal');
 const btnOpenBuy = document.querySelector('.item__btn__buy');
 const btnClose = document.querySelector('.modal__close');
-const btnOpenClick =document.querySelector('.item__btn__toBasket');
-const btnOpenPhoto =document.querySelector('.item__photoMain');
-const contextForm = modal.querySelector('.modal__content__one')
-const contextBacket = modal.querySelector('.modal__content__two')
-const contextPhoto = modal.querySelector('.modal__content__three')
+const btnOpenClick = document.querySelector('.item__btn__toBasket');
+const btnOpenPhoto = document.querySelector('.item__photoMain');
+const contextForm =  document.querySelector('.modal__content__one');
+const contextBacket =  document.querySelector('.modal__content__two');
+const contextPhoto =  document.querySelector('.modal__content__three');
+const dialog =  document.querySelector('.modal__dialog')
 
 btnOpenBuy.addEventListener('click', OpenForm);
 btnOpenClick.addEventListener('click', OpenBacket);
@@ -59,6 +60,10 @@ function OpenBacket() {
 }
 
 function OpenPhoto() {
+  dialog.style.width = '1280px';
+  dialog.style.height = '684px';
+  dialog.style.left = 'calc(50% - 640px)';
+
   contextForm.style.display = 'none';
   contextBacket.style.display = 'none';
   contextPhoto.style.display = 'block';
