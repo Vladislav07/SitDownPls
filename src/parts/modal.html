@@ -1,13 +1,37 @@
 <div id="openModal" class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Название</h3>
-        <a href="#close" title="Close" class="close">x</a>
+  <div class="modal__dialog">
+    <div class="modal__content modal__content__one">
+      <a href="#" title="Close" class="modal__close">x</a>
+      <div class="modal__header">
+        <h3 class="modal__title">Купить в один клик</h3>
+        <p class="modal__descr">
+          Чтобы оформить заказ&nbsp;&mdash; заполните формы ниже и&nbsp;наш
+          менеджер свяжется с&nbsp;вами в&nbsp;течении часа.
+        </p>
       </div>
-      <div class="modal-body">
-        <p>Содержимое модального окна...</p>
+      <div class="modal__body">
+        <form action="" class="modal__form form">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Как вас зовут?"
+          />
+          <input type="tel" class="modal__input" placeholder="Ваш телефон" />
+
+          <button class="modal__btn" type="submit">Отправить</button>
+        </form>
+        <div class="modal__convention">
+          <input type="checkbox" name="" id="" />
+          Принимаю<span>пользовательское соглашение</span>
+        </div>
       </div>
     </div>
+    <div class="modal__content modal__content__two">
+      <div class="modal__body modal__body__two">
+        <img src="/img/modal-elephant.svg" alt="" srcset="" />
+        <p class="modal__note">Спасибо, мы&nbsp;вам перезвоним!</p>
+      </div>
+    </div>
+    <div class="modal__content modal__content__three"></div>
   </div>
 </div>

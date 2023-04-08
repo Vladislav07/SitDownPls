@@ -1,29 +1,154 @@
- @import 'mixin';
- @import 'var';
+@import 'mixin';
+@import 'var';
 
 .modal {
-  display: flex;
-  justify-content: center;
+  display: none;
   position: absolute;
-  //content: '';
+  content: '';
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: $color-black;
-  opacity: 0.3;
+  background-color: rgba(51, 51, 51, 0.3);
   z-index: 10;
-}
 
-  .modal-dialog{
+  &__dialog {
     display: inline-block;
-    background-color: #fff;
-    z-index: 100;
-    opacity: 1;
+    position: absolute;
+    width: 624px;
+    height: 421px;
+    left: calc(50% - 312px);
+    top: 181px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
   }
 
- 
+  &__content {
+    padding: 30px;
+  }
 
+  &__header {
+    width: 374px;
+  }
+
+  &____content__one {
+
+  }
+
+  &____content__two {
+
+
+  }
+
+  &__body__two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding-top: 118px;
+    img{
+      width: 172px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__note {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: $color-black;
+  }
+
+  &____content__three {
+
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: $color-black;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-black;
+  }
+
+  &__close {
+    position: absolute;
+    font-size: 2rem;
+    top: 8px;
+    right: 20px;
+    color: $color-grey;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    @include formInput;
+    margin-bottom: 30px;
+  }
+
+  &__input:hover:not(:focus)::placeholder {
+    color: $color-primary;
+  }
+
+  &__input:focus {
+    outline: 1px solid $color-primary;
+  }
+
+  &__btn {
+    @include btnPrimary;
+    margin-right: auto;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  }
+
+  &__btn:hover:not(:focus) {
+    background-color: $color-accent;
+  }
+
+  &__btn:focus {
+    outline-color: #ce4307;
+    outline: 3px solid $color-primary;
+    outline-offset: -3px;
+  }
+
+  &__btn:active {
+    background-color: $color-active;
+  }
+
+  &__convention {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-black;
+    span {
+      padding-left: 5px;
+      color: $color-primary;
+    }
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 181px;
+    opacity: 1;
+  }
+}
 
 // @media (max-width: $media-xl) {
 //   .modal {

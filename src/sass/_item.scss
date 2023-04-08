@@ -34,6 +34,10 @@
     position: relative;
   }
 
+  &__photoMain {
+    cursor: pointer;
+  }
+
   &__photoTop {
     margin-bottom: 32px;
     height: 81px;

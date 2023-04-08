@@ -1,5 +1,4 @@
-
- const swiper = new Swiper('.hero__swiper', {
+const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   loop: true,
   // пагинация
@@ -9,9 +8,7 @@
   },
 });
 
-
-
- const swiperOffers = new Swiper('.offers__container', {
+const swiperOffers = new Swiper('.offers__container', {
   slidesPerView: 1,
   //loop: true,
   // навигация
@@ -31,10 +28,57 @@ const swiperUseful = new Swiper('.useful__container', {
   },
 });
 
+//Modal
+
+const modal = document.querySelector('#openModal');
+const btnOpenBuy = document.querySelector('.item__btn__buy');
+const btnClose = document.querySelector('.modal__close');
+const btnOpenClick =document.querySelector('.item__btn__toBasket');
+const btnOpenPhoto =document.querySelector('.item__photoMain');
+const contextForm = modal.querySelector('.modal__content__one')
+const contextBacket = modal.querySelector('.modal__content__two')
+const contextPhoto = modal.querySelector('.modal__content__three')
+
+btnOpenBuy.addEventListener('click', OpenForm);
+btnOpenClick.addEventListener('click', OpenBacket);
+btnOpenPhoto.addEventListener('click', OpenPhoto);
+btnClose.addEventListener('click', Close);
+
+function OpenForm() {
+  contextForm.style.display = 'block';
+  contextPhoto.style.display = 'none';
+  contextBacket.style.display = 'none';
+  modal.style.display = 'block';
+}
+
+function OpenBacket() {
+  contextForm.style.display = 'none';
+  contextPhoto.style.display = 'none';
+  contextBacket.style.display = 'block';
+  modal.style.display = 'block';
+}
+
+function OpenPhoto() {
+  contextForm.style.display = 'none';
+  contextBacket.style.display = 'none';
+  contextPhoto.style.display = 'block';
+  modal.style.display = 'block';
+}
+
+function Close() {
+  modal.style.display = 'none';
+}
+
+window.addEventListener('click', (event) => {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
 // let burger = document.querySelector(".burger");
 // let menu = document.querySelector(".header__nav");
 // let menuLinks=document.querySelectorAll(".nav__link");
-// let isState=false; 
+// let isState=false;
 
 // burger.addEventListener("click", function () {
 //   burger.classList.toggle("burger__active");
