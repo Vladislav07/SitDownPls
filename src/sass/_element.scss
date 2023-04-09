@@ -58,7 +58,7 @@
 
 .header__category {
   height: 60px;
-  width: 300px;
+  max-width: 300px;
   .choices {
     height: 100%;
   }
@@ -74,23 +74,21 @@
 
   .swiper-button-prev {
     top: 25px;
-    left: 1200px;
+    right: var(--swiper-navigation-sides-offset, 50px);
+    left: auto;
   }
 
   .swiper-button-prev::after {
-      display: none;
-    }
-  
+    display: none;
+  }
 
   .swiper-button-next {
     top: 25px;
-  
   }
 
   .swiper-button-next::after {
-      display: none;
-    }
-  
+    display: none;
+  }
 }
 
 .swiper-wrapper {
@@ -141,6 +139,6 @@
   opacity: 1;
 }
 
-.swiper-slide.offers__slide__two.swiper-slide-next{
+.swiper-slide.offers__slide__two.swiper-slide-next {
   visibility: hidden;
 }

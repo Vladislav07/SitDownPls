@@ -9,6 +9,7 @@ const swiper = new Swiper('.hero__swiper', {
 });
 
 const swiperOffers = new Swiper('.offers__container', {
+  slidesPerGroup: 3,
   slidesPerView: 1,
   //loop: true,
   // навигация

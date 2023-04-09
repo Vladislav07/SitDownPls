@@ -134,6 +134,29 @@
         line-height: 22px;
       }
     }
+
+    &__burger {
+      display: none;
+      transition: outline 0.3s ease-in-out;
+      padding-top: 7px;
+    }
+
+    &__burger:active .burger__line {
+      background-color: $color-primary;
+    }
+
+    &__burger:active::after {
+      background-color: $color-primary;
+      width: 33%;
+    }
+
+    &__burger:active::before {
+      background-color: $color-primary;
+    }
+
+    &__burger:active {
+      outline: none;
+    }
   }
 
   &__personal-area {
@@ -214,49 +237,101 @@
   justify-self: flex-start;
 }
 
+.burger {
+  position: relative;
+
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 18px;
+  background-color: transparent;
+
+  &__line {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: $color-primary;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+
+  &__line:active {
+    background-color: $color-primary;
+    width: 66%;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $color-primary;
+  }
+
+  &::after {
+    top: auto;
+    bottom: 0;
+  }
+}
+
 @media (max-width: $media-xl) {
   .header {
     &__container {
       max-width: 1024px;
+      padding-top: 17px;
+      &::after {
+        top: 59px;
+      }
     }
 
     &__wrapper {
-      max-width: 952px;
-      grid-template-rows: 60px 50px 92px 60px;
+      padding-right: 36px;
+      padding-left: 36px;
+      grid-template-columns: 187px 64px 401px 58px 242px;
+      grid-template-rows: 23px 28px 28px 60px;
     }
 
     &__phone {
-      grid-column: 10;
+      grid-column: 5 / span 1;
       grid-row: 1;
+      justify-self: end;
     }
 
     &__service {
-      grid-column: 1 / span 9;
+      grid-column: 1 / span 4;
       grid-row: 2;
+      justify-self: flex-start;
+      align-self: center;
     }
 
     &__logo {
-      grid-column: 1 / span 2;
+      grid-column: 1 / span 1;
       grid-row: 3;
     }
 
     &__nav {
-      grid-column: 3 / span 10;
+      grid-column: 2 / span 4;
       grid-row: 3;
+      justify-self: end;
     }
 
     &__search {
-      grid-column: 1 / span 8;
+      grid-column: 1 / span 3;
       grid-row: 4;
     }
 
     &__category {
-      grid-column: 9 / span 4;
+      grid-column: 4 / span 2;
       grid-row: 4;
     }
 
     &__personal-area {
-      grid-column: 10 / span 3;
+      grid-column: 5 / span 1;
       grid-row: 2;
     }
   }
@@ -270,35 +345,140 @@
 
 @media (max-width: $media-lg) {
   .header {
-    margin-bottom: 68px;
-
     &__container {
       max-width: 768px;
+      padding-top: 17px;
+      &::after {
+        top: 59px;
+      }
     }
 
     &__wrapper {
-      max-width: 714px;
-      grid-template-rows: 289px 133px;
+      padding-right: 72px;
+      padding-left: 72px;
+      grid-template-columns: 222px 213px 189px;
+      grid-template-rows: 23px 28px 28px 60px;
+    }
+
+    &__region {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &__phone {
+      grid-column: 3 / span 1;
+      grid-row: 1;
+      justify-self: end;
+    }
+
+    &__service {
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      justify-self: flex-start;
+      align-self: center;
+    }
+
+    &__burger {
+      display: inline-block;
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    &__logo {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    &__nav {
+     display: none;
+    }
+
+    &__search {
+      grid-column: 1 / span 2;
+      grid-row: 4;
+    }
+
+    &__category {
+      grid-column: 3 / span 1;
+      grid-row: 4;
+    }
+
+    &__personal-area {
+      grid-column: 3 / span 1;
+      grid-row: 3;
+    }
+  }
+
+  .service {
+  
+    &__item:not(:last-child) {
+      margin-right: 35px;
     }
   }
 }
 
 @media (max-width: $media-sm) {
   .header {
-    margin-bottom: 49px;
-
     &__container {
       max-width: 320px;
+      padding-top: 0;
+      &::after {
+        top: 0;
+      }
     }
 
     &__wrapper {
-      max-width: 278px;
-    }
-
-    &__wrapper {
-      gap: 34px;
+      padding-right: 12px;
+      padding-left: 12px;
+      row-gap: 16px;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 422px 237px 105px;
+      grid-template-rows: 50px 23px 22px 50px 60px 60px;
+    }
+
+    &__region {
+      grid-column: 1/span 2;
+      grid-row: 2;
+      justify-self: flex-start;
+    }
+
+    &__phone {
+      grid-column: 1 / span 2;
+      grid-row: 3;
+      justify-self: flex-start;
+    }
+
+    &__service {
+     display: none;
+    }
+
+    &__burger {
+      grid-column: 1;
+      grid-row: 4;
+      justify-self: flex-start;
+
+    }
+
+    &__logo {
+      grid-column: 1/span 2;
+      grid-row: 1;
+      justify-self: center;
+    }
+
+
+    &__search {
+      grid-column: 1 / span 2;
+      grid-row: 5;
+    }
+
+    &__category {
+      grid-column: 1 / span 2;
+      grid-row: 6;
+    }
+
+    &__personal-area {
+      grid-column: 2 / span 1;
+      grid-row: 4;
+      justify-self: flex-end;
     }
   }
 }
@@ -331,29 +511,6 @@
 
 //   &__logo {
 //     margin-right: auto;
-//   }
-
-//   &__burger {
-//     display: none;
-//     transition: outline 0.3s ease-in-out;
-//     padding-top: 7px;
-//   }
-
-//   &__burger:active .burger__line {
-//     background-color: $color-primary;
-//   }
-
-//   &__burger:active::after {
-//     background-color: $color-primary;
-//     width: 33%;
-//   }
-
-//   &__burger:active::before {
-//     background-color: $color-primary;
-//   }
-
-//   &__burger:active {
-//     outline: none;
 //   }
 
 //   &__search {
@@ -516,48 +673,7 @@
 //   }
 // }
 
-// .burger {
-//   position: relative;
-//   display: none;
-//   border: none;
-//   padding: 0;
-//   width: 20px;
-//   height: 18px;
-//   background-color: transparent;
-
-//   &__line {
-//     position: absolute;
-//     right: 0;
-//     top: 50%;
-//     width: 100%;
-//     height: 3px;
-//     background-color: #fff;
-//     transform: translateY(-50%);
-//     transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
-//   }
-
-//   &__line:active {
-//     background-color: $color-primary;
-//     width: 66%;
-//   }
-
-//   &::before,
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 3px;
-//     background-color: #fff;
-//   }
-
-//   &::after {
-//     top: auto;
-//     bottom: 0;
-//   }
-// }
-
+//
 // .search {
 //   @include btnReset;
 //   display: inline-block;

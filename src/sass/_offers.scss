@@ -43,6 +43,7 @@
 }
 
 .offer {
+  width: 296px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -94,3 +95,31 @@
     left: 0;
   }
 }
+
+@media (max-width: $media-xl) {
+  .offers {
+    margin-bottom: 70px;
+  
+    &__container {
+      width: 951px;
+    } 
+  
+    &__wrapper {
+      grid-template-columns: 296px 296px 296px;
+    }
+
+    &__middle {
+  
+    }
+  
+  }
+
+  .offer {
+    &__img__additional{
+       display: none;
+    }
+  }
+
+}
+@media (max-width: $media-lg) {}
+@media (max-width: $media-sm) {}
