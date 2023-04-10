@@ -1,3 +1,5 @@
+const { notify } = require('browser-sync');
+
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   loop: true,
@@ -10,9 +12,8 @@ const swiper = new Swiper('.hero__swiper', {
 
 const swiperOffers = new Swiper('.offers__container', {
   slidesPerGroup: 3,
-  slidesPerView: 1,
-  //loop: true,
-  // навигация
+  slidesPerView: 'auto',
+  spaceBetween: 30,
   navigation: {
     nextEl: '.offers__container > .swiper-button-next',
     prevEl: '.offers__container > .swiper-button-prev',
@@ -36,10 +37,10 @@ const btnOpenBuy = document.querySelector('.item__btn__buy');
 const btnClose = document.querySelector('.modal__close');
 const btnOpenClick = document.querySelector('.item__btn__toBasket');
 const btnOpenPhoto = document.querySelector('.item__photoMain');
-const contextForm =  document.querySelector('.modal__content__one');
-const contextBacket =  document.querySelector('.modal__content__two');
-const contextPhoto =  document.querySelector('.modal__content__three');
-const dialog =  document.querySelector('.modal__dialog')
+const contextForm = document.querySelector('.modal__content__one');
+const contextBacket = document.querySelector('.modal__content__two');
+const contextPhoto = document.querySelector('.modal__content__three');
+const dialog = document.querySelector('.modal__dialog');
 
 btnOpenBuy.addEventListener('click', OpenForm);
 btnOpenClick.addEventListener('click', OpenBacket);
