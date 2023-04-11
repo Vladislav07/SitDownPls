@@ -2,7 +2,7 @@
 @import 'var';
 
 .top {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 
   &__container {
     width: 1280px;
@@ -75,7 +75,7 @@
   }
 
   &__category:not(:last-child) {
-     margin-right: 30px;
+    margin-right: 30px;
   }
 
   &__name {
@@ -103,7 +103,62 @@
   }
 }
 
-@media (max-width: $media-sm) {}
-@media (max-width: $media-lg) {}
-@media (max-width: $media-sm) {}
+@media (max-width: $media-sm) {
 
+  .Top {
+
+    &__container {
+      width: 952px;
+    }
+
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 296px);
+      grid-template-rows: 511px 405px;
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      padding-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-radius: 10px;
+      background-color: $color-grey_ligth;
+      img {
+      }
+    }
+
+    &__item__one {
+      grid-column: 1 / span 3;
+      grid-row: 1;
+    }
+
+    &__item__two {
+      grid-column: 4 / span 3;
+      grid-row: 1;
+    }
+
+    &__item__three {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
+
+    &__item__four {
+      grid-column: 3 / span 2;
+      grid-row: 2;
+    }
+
+    &__item__five {
+      grid-column: 5 / span 2;
+      grid-row: 2;
+    }
+  }
+}
+@media (max-width: $media-lg) {
+}
+@media (max-width: $media-sm) {
+}

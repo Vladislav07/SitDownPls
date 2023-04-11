@@ -18,8 +18,8 @@
     font-size: 60px;
     line-height: 120%;
     span {
-        font-weight: 900;
-        color: $color-gold;
+      font-weight: 900;
+      color: $color-gold;
     }
   }
 
@@ -27,7 +27,46 @@
     @include btnPrimary;
   }
 }
-@media (max-width: $media-xl) {}
-@media (max-width: $media-lg) {}
-@media (max-width: $media-sm) {}
+@media (max-width: $media-xl) {
+  .anons {
+    &__container {
+      width: 1024px;
+      height: 600px;
+      background-image: url('../img/Anons_1024.jpg');
+      padding: 36px 150px;
+    }
+  }
+}
+@media (max-width: $media-lg) {
+  .anons {
+    &__container {
+      width: 768px;
+      background-image: url('../img/Anons_768.jpg');
+    }
 
+    &__title {
+      width: 508px;
+    }
+  }
+}
+@media (max-width: $media-sm) {
+  .anons {
+    &__container {
+      width: 320px;
+      height: 302px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: url('../img/Anons_320.jpg');
+      background-position: top;
+      padding: 12px 30px;
+      padding-bottom: 0;
+    }
+
+    &__title {
+      width: 187px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+}

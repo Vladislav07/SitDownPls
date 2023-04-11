@@ -1,4 +1,4 @@
-const { notify } = require('browser-sync');
+
 
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
@@ -11,9 +11,16 @@ const swiper = new Swiper('.hero__swiper', {
 });
 
 const swiperOffers = new Swiper('.offers__container', {
-  slidesPerGroup: 3,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
+  slidesPerGroup: 2,
+  slidesPerView: 3,
+ // spaceBetween: 30,
+  breakpoints: {
+    // when window width is >= 320px
+
+    768: {
+      slidesPerGroup: 2,
+    },
+  },
   navigation: {
     nextEl: '.offers__container > .swiper-button-next',
     prevEl: '.offers__container > .swiper-button-prev',

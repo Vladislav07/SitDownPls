@@ -109,6 +109,10 @@
   border:2px solid $color-primary;
 }
 
+@mixin btnSecondary-sm {
+  padding: 12px 25px;
+}
+
 @mixin sectionTitle-sm {
   font-size: 18px;
   line-height: 23px;

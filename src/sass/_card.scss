@@ -9,10 +9,11 @@
   align-items: center;
   justify-content: flex-end;
   border-radius: 10px;
-  height: 420px;
+  // height: 420px;
   background-color: $color-grey_ligth;
   img {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
+
   }
 
   &__content {
@@ -32,7 +33,7 @@
   }
 
   &__price {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
@@ -85,7 +86,41 @@
   color: $color-secondary;
 }
 
-@media (max-width: $media-xl) {}
-@media (max-width: $media-lg) {}
-@media (max-width: $media-sm) {}
+@media (max-width: $media-xl) {
+}
+@media (max-width: $media-lg) {
+}
+@media (max-width: $media-sm) {
+  .card {
+     padding: 16px;
 
+    &__content {
+      padding: 0;
+    }
+
+    &__name {
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    &__price {
+      margin-bottom: 16px;
+    }
+
+    &__rating {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+
+    &__btn {
+      @include btnSecondary-sm;
+    }
+
+    img {
+      margin-bottom: 13px;
+    }
+  }
+}
