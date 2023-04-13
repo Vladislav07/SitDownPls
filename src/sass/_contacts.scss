@@ -12,7 +12,7 @@
 
   &__wrapper {
     display: grid;
-    gap: 30px;
+    gap: 32px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
@@ -101,118 +101,51 @@
 }
 
 @media (max-width: $media-xl) {
+
   .contacts {
-    margin-bottom: 67px;
+ 
 
     &__container {
-      max-width: 962px;
-      padding-top: 5px;
-    }
+      max-width: 951px;
 
-    &__title {
-      margin-bottom: 18px;
     }
 
     &__wrapper {
-      grid-template-columns: 1fr 342px;
+
+      grid-template-columns: 405px 511px;
       grid-template-rows: 1fr;
-    }
-
-    &__map {
-      @include backgroundImage('/img/map_1024.jpg');
-      height: 467px;
-    }
-
-    &__text {
-      margin-bottom: 24px;
-    }
-
-    &__modal {
-      width: 100%;
-      height: 34%;
     }
   }
 }
+
 @media (max-width: $media-lg) {
+
   .contacts {
-    margin-bottom: 48px;
 
     &__container {
       max-width: 714px;
     }
 
-    &__wrapper {
-      grid-template-columns: 1fr;
-      grid-template-rows: 460px 466px;
-    }
-
-    &__map {
-      @include backgroundImage('/img/map_768.jpg');
-    }
-
-    &__request {
-      max-width: 467px;
-    }
-
-    &__title__form {
-      margin-bottom: 5px;
-    }
   }
 }
+
+
 @media (max-width: $media-sm) {
   .contacts {
+
     &__container {
       max-width: 320px;
-      padding-top: 0;
-    }
-
-    &__title {
-      @include sectionTitle-sm;
-      margin-bottom: 20px;
-      padding-left: 19px;
     }
 
     &__wrapper {
-      grid-template-columns: 1fr;
-      grid-template-rows: 464px 431px;
-      gap: 25px;
+      display: block;
+     max-width: 296px;
+     margin: 0 auto;
     }
 
-    &__map {
-      @include backgroundImage('/img/map_320.jpg');
+    &__image {
+      display: none;
     }
 
-    &__request {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &__title__form {
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 9px;
-    }
-
-    &__descr {
-      font-size: 14px;
-      line-height: 18px;
-    }
-
-    &__input {
-      font-size: 14px;
-      line-height: 16px;
-      margin-bottom: 20px;
-      height: 40px;
-    }
-
-    &__text {
-      font-size: 14px;
-      line-height: 16px;
-      margin-bottom: 20px;
-    }
-
-    &__btn {
-      @include btnPrimary-sm;
-    }
   }
 }

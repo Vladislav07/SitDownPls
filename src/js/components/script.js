@@ -1,5 +1,3 @@
-
-
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   loop: true,
@@ -13,7 +11,7 @@ const swiper = new Swiper('.hero__swiper', {
 const swiperOffers = new Swiper('.offers__container', {
   slidesPerGroup: 2,
   slidesPerView: 3,
- // spaceBetween: 30,
+  // spaceBetween: 30,
   breakpoints: {
     // when window width is >= 320px
 
@@ -28,9 +26,26 @@ const swiperOffers = new Swiper('.offers__container', {
 });
 
 const swiperUseful = new Swiper('.useful__container', {
-  slidesPerView: 1,
-  //loop: true,
-  // навигация
+  slidesPerGroup: 1,
+  slidesPerView: 2,
+  spaceBetween: 32,
+  loop: true,
+  breakpoints: {
+    // when window width is >= 320px
+    1280: {
+      slidesPerView: 2,
+    },
+
+    992: {
+      slidesPerView: 3,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    275: {
+      slidesPerView: 1,
+    },
+  },
   navigation: {
     nextEl: '.useful__container > .swiper-button-next',
     prevEl: '.useful__container > .swiper-button-prev',

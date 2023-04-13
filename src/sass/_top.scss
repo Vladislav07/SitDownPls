@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: $media-sm) {
+@media (max-width: $media-xl) {
 
   .Top {
 
@@ -115,50 +115,91 @@
     &__list {
       display: grid;
       grid-template-columns: repeat(3, 296px);
-      grid-template-rows: 511px 405px;
-      margin-bottom: 32px;
+      grid-template-rows: 511px 511px;
     }
 
-    &__item {
-      padding-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      border-radius: 10px;
-      background-color: $color-grey_ligth;
-      img {
-      }
-    }
 
     &__item__one {
-      grid-column: 1 / span 3;
+      grid-column: 1 / span 2;
       grid-row: 1;
     }
 
     &__item__two {
-      grid-column: 4 / span 3;
-      grid-row: 1;
-    }
-
-    &__item__three {
-      grid-column: 1 / span 2;
+      grid-column: 2 / span 1;
       grid-row: 2;
     }
 
+    &__item__three {
+      grid-column: 1 / span 1;
+      grid-row: 1;
+    }
+
     &__item__four {
-      grid-column: 3 / span 2;
+      grid-column: 1 / span 1;
       grid-row: 2;
     }
 
     &__item__five {
-      grid-column: 5 / span 2;
+      grid-column: 3 / span 1;
       grid-row: 2;
     }
   }
 }
+
 @media (max-width: $media-lg) {
+  .Top {
+
+    &__container {
+      width: 624px;
+    }
+
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 296px);
+      grid-template-rows: 511px 511px 511px;
+    }
+
+
+    &__item__one {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+
+    &__item__two {
+      grid-column: 2 / span 1;
+      grid-row: 2;
+    }
+
+    &__item__three {
+      grid-column: 1 / span 1;
+      grid-row: 2;
+    }
+
+    &__item__four {
+      grid-column: 1 / span 1;
+      grid-row: 3;
+    }
+
+    &__item__five {
+      grid-column: 2 / span 1;
+      grid-row: 3;
+    }
+  }
 }
+
 @media (max-width: $media-sm) {
+  .Top {
+
+    &__container {
+      width: 296px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 140px);
+      grid-template-rows: 332px 206px 206px;
+    }
+  }
+
 }
