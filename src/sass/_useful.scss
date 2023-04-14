@@ -90,7 +90,32 @@
     }
   }
 }
+
 @media (max-width: $media-lg) {
+
+  .useful{
+    &__container {
+    width: 624px;
+  }
+  }
+  
 }
+
 @media (max-width: $media-sm) {
+
+  .useful{
+    &__container {
+    width: 296px;
+    height: 562px;
+  }
+
+  &__title {
+    @include sectionTitle-sm;
+  }
+
+  &__btn {
+    @include btnSecondary-sm;
+  }
+  }
+
 }

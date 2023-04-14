@@ -142,3 +142,21 @@
 .swiper-slide.offers__slide__two.swiper-slide-next {
   visibility: hidden;
 }
+
+@media (max-width: $media-sm) {
+  .swiper-container {
+    .swiper-button-prev {
+      top: auto;
+      bottom: 0;
+      right: 50px;
+      left: auto;
+    }
+  
+    .swiper-button-next {
+      top: auto;
+      bottom: 0;
+    }
+  
+  
+  }
+}

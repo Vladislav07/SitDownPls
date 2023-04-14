@@ -8,11 +8,13 @@
   &__container {
     max-width: 1280px;
     margin: 0 auto;
+
   }
 
   &__wrapper {
     display: grid;
     gap: 32px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
@@ -106,14 +108,11 @@
  
 
     &__container {
-      max-width: 951px;
-
+      width: 952px;
     }
 
     &__wrapper {
-
       grid-template-columns: 405px 511px;
-      grid-template-rows: 1fr;
     }
   }
 }
@@ -123,7 +122,11 @@
   .contacts {
 
     &__container {
-      max-width: 714px;
+      max-width: 624px;
+    }
+
+    &__wrapper {
+      grid-template-columns: 405px 187px;
     }
 
   }

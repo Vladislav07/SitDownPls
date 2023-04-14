@@ -1,6 +1,6 @@
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
-  loop: true,
+ // loop: true,
   // пагинация
   pagination: {
     el: '.swiper-pagination',
@@ -11,12 +11,21 @@ const swiper = new Swiper('.hero__swiper', {
 const swiperOffers = new Swiper('.offers__container', {
   slidesPerGroup: 2,
   slidesPerView: 3,
-  // spaceBetween: 30,
+  spaceBetween: 32,
   breakpoints: {
-    // when window width is >= 320px
+    1280: {
+      slidesPerView: 2,
+    },
 
-    768: {
-      slidesPerGroup: 2,
+    992: {
+      slidesPerView: 3,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    275: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
     },
   },
   navigation: {
@@ -31,7 +40,6 @@ const swiperUseful = new Swiper('.useful__container', {
   spaceBetween: 32,
   loop: true,
   breakpoints: {
-    // when window width is >= 320px
     1280: {
       slidesPerView: 2,
     },
