@@ -60,6 +60,16 @@ const swiperUseful = new Swiper('.useful__container', {
   },
 });
 
+// const swiperProducts = new Swiper('.products__swiper', {
+//   slidesPerView: 2,
+//  // loop: true,
+//   // пагинация
+//   navigation: {
+//     nextEl: '.products__swiper > .swiper-button-next',
+//     prevEl: '.products__swiper > .swiper-button-prev',
+//   },
+// });
+
 //Modal
 
 const modal = document.querySelector('#openModal');
@@ -78,6 +88,7 @@ btnOpenPhoto.addEventListener('click', OpenPhoto);
 btnClose.addEventListener('click', Close);
 
 function OpenForm() {
+  alert('oooo')
   contextForm.style.display = 'block';
   contextPhoto.style.display = 'none';
   contextBacket.style.display = 'none';
