@@ -23,19 +23,20 @@
     <section id="catalogue" class="catalogue">
       <div class="catalogue__container">
         @@include('./parts/breadcrumb.html')
+        <h2 class="catalogue__title">Каталог</h2>        
         <div class="catalogue__wrapper">
           <div class="filter catalogue__filter">
             <div class="filter__container">
-              <label for="" class="filter__label">Фильтровать&nbsp;по:</label>
               @@include('./parts/filter.html')
+              @@include('./parts/filterSelect.html')
             </div>
           </div>
           <div class="catalogue__cards">
-          <h2 class="catalogue__title">Каталог</h2>
-          <ul class="list-reset catalogue__card">
-            @@include('./parts/card.html')
-          </ul>
-         </div>
+            <h2 class="catalogue__title">Каталог</h2>
+            <ul class="list-reset catalogue__card">
+              @@include('./parts/card.html')
+            </ul>
+          </div>
         </div>
         <div class="catalogue__pagination">
           <a href="#">1</a>

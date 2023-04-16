@@ -111,10 +111,12 @@
 }
 
 .record {
-  display: flex;
+  display: grid;
   align-items: baseline;
+  grid-template-columns:max-content  216px;
 
   &__name {
+    grid-column: 1;
     font-weight: 400;
     font-size: 14px;
     line-height: 180%;
@@ -122,6 +124,8 @@
   }
 
   &__separator {
+    display: none;
+    grid-column: 2;
     font-size: 2px;
     line-height: 0px;
     letter-spacing: 0.5em;
@@ -129,6 +133,7 @@
   }
 
   &__value {
+    grid-column: 3;
     font-weight: 400;
     font-size: 14px;
     line-height: 180%;
@@ -136,7 +141,27 @@
   }
 }
 
-@media (max-width: $media-sm) {}
-@media (max-width: $media-lg) {}
-@media (max-width: $media-sm) {}
+@media (max-width: $media-xl) {
+  .item {
+    &__container {
+      width: 952px;
+    }
 
+    &__wrapper {
+  
+      grid-template-columns: 514px 405px;
+      grid-template-rows: 706px;
+
+    }
+  }
+
+  .record {
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: 1fr 216px;
+  }
+}
+@media (max-width: $media-lg) {
+}
+@media (max-width: $media-sm) {
+}
