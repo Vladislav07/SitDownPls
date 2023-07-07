@@ -1,11 +1,8 @@
-//import  Choices  from 'choices.js'
+
 const sity = document.querySelector('#sity');
 const region = document.querySelector('#category');
-const catalog = document.querySelector('#catalogcategory');
-const price = document.querySelector('#price');
-const discount = document.querySelector('#discount');
-const color = document.querySelector('#color');
 
+if(sity){
 const sitySelect = new Choices(sity, {
   silent: false,
   items: [],
@@ -45,7 +42,9 @@ sitySelect.setValue([
   { value: 'Пермь', label: 'Пермь' },
   { value: 'Москва', label: 'Москва' },
 ]);
+}
 
+if(region){
 const regionSelect = new Choices(region, {
   silent: false,
   items: [],
@@ -90,31 +89,47 @@ regionSelect.setValue([
   { value: 'Аксессуары', label: 'Аксессуары' },
   { value: 'Тумбы', label: 'Тумбы' },
 ]);
+}
 
-// const catalogSelect = new Choices(catalog,{
-//  placeholder: true,
+const catalog = document.querySelector('#catalogcategory');
+if(catalog){
 
-// });
 
-// catalogSelect.setValue([
+const catalogSelect = new Choices(catalog,{
+ placeholder: true,
+});
 
-// { value: 'Диваны', label: 'Диваны' },
-// { value: 'Кресла', label: 'Кресла' },
-// { value: 'Пуфы', label: 'Пуфы' },
-// { value: 'Столы', label: 'Столы' },
-// { value: 'Стулья', label: 'Стулья' },
-// { value: 'Комоды', label: 'Комоды' },
-// { value: 'Кровати', label: 'Кровати' },
-// { value: 'Аксессуары', label: 'Аксессуары' },
-// { value: 'Тумбы', label: 'Тумбы' },
+catalogSelect.setValue([
 
-// ]);
+{ value: 'Диваны', label: 'Диваны' },
+{ value: 'Кресла', label: 'Кресла' },
+{ value: 'Пуфы', label: 'Пуфы' },
+{ value: 'Столы', label: 'Столы' },
+{ value: 'Стулья', label: 'Стулья' },
+{ value: 'Комоды', label: 'Комоды' },
+{ value: 'Кровати', label: 'Кровати' },
+{ value: 'Аксессуары', label: 'Аксессуары' },
+{ value: 'Тумбы', label: 'Тумбы' },
+]);
+}
 
-// const priceSelect = new Choices(price);
-// priceSelect.setValue([]);
+const price = document.querySelector('#price');
+if (price) {
+  const priceSelect = new Choices(price);
+  priceSelect.setValue([]);
+}
 
-// const discountSelect = new Choices(discount);
-// discountSelect.setValue([]);
+const discount = document.querySelector('#discount');
+if(discount){
+  const discountSelect = new Choices(discount);
+discountSelect.setValue([]);
+}
 
-// const colorSelect = new Choices(color);
-// colorSelect.setValue([]);
+const color = document.querySelector('#color');
+if(color){
+const colorSelect = new Choices(color);
+colorSelect.setValue([]);
+}
+
+
+

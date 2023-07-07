@@ -38,7 +38,7 @@ const swiperOffers = new Swiper('.offers__container', {
     prevEl: '.offers__container > .swiper-button-prev',
   },
 });
-/*
+
 const swiperUseful = new Swiper('.useful__container', {
   slidesPerGroup: 1,
   slidesPerView: 2,
@@ -64,7 +64,7 @@ const swiperUseful = new Swiper('.useful__container', {
     prevEl: '.useful__container > .swiper-button-prev',
   },
 });
-*/
+
 
 // const swiperProducts = new Swiper('.products__swiper', {
 //   slidesPerView: 2,
@@ -88,10 +88,21 @@ const contextBacket = document.querySelector('.modal__content__two');
 const contextPhoto = document.querySelector('.modal__content__three');
 const dialog = document.querySelector('.modal__dialog');
 
-btnOpenBuy.addEventListener('click', OpenForm);
-btnOpenClick.addEventListener('click', OpenBacket);
+if(btnOpenBuy){
+  btnOpenBuy.addEventListener('click', OpenForm);
+}
+if(btnOpenClick){
+  btnOpenClick.addEventListener('click', OpenBacket);
+}
+
+if(btnOpenPhoto){
 btnOpenPhoto.addEventListener('click', OpenPhoto);
+}
+
+if(btnClose){
 btnClose.addEventListener('click', Close);
+}
+
 
 function OpenForm() {
   alert('oooo');
