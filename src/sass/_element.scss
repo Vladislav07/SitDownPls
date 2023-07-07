@@ -91,9 +91,6 @@
   }
 }
 
-
-
-
 .swiper-wrapper {
   position: absolute;
   top: 0;
@@ -129,8 +126,9 @@
   outline: none;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+ .swiper-pagination-horizontal.swiper-pagination-bullets
+   .swiper-pagination-bullet
+ {
   width: 14px;
   height: 14px;
   background-color: $color-primary;

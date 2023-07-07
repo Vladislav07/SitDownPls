@@ -1,6 +1,8 @@
+//import Swiper from 'swiper';
+//const Swiper = require('swiper')
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
- // loop: true,
+  // loop: true,
   // пагинация
   pagination: {
     el: '.swiper-pagination',
@@ -8,32 +10,35 @@ const swiper = new Swiper('.hero__swiper', {
   },
 });
 
+
+
 const swiperOffers = new Swiper('.offers__container', {
+
   slidesPerGroup: 2,
   slidesPerView: 3,
   spaceBetween: 32,
-  breakpoints: {
-    1280: {
-      slidesPerView: 2,
-    },
+  // breakpoints: {
+  //   1280: {
+  //     slidesPerView: 2,
+  //   },
 
-    992: {
-      slidesPerView: 3,
-    },
-    575: {
-      slidesPerView: 2,
-    },
-    275: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-  },
+  //   992: {
+  //     slidesPerView: 3,
+  //   },
+  //   575: {
+  //     slidesPerView: 2,
+  //   },
+  //   275: {
+  //     slidesPerView: 1,
+  //     slidesPerGroup: 1,
+  //   },
+  // },
   navigation: {
     nextEl: '.offers__container > .swiper-button-next',
     prevEl: '.offers__container > .swiper-button-prev',
   },
 });
-
+/*
 const swiperUseful = new Swiper('.useful__container', {
   slidesPerGroup: 1,
   slidesPerView: 2,
@@ -59,6 +64,7 @@ const swiperUseful = new Swiper('.useful__container', {
     prevEl: '.useful__container > .swiper-button-prev',
   },
 });
+*/
 
 // const swiperProducts = new Swiper('.products__swiper', {
 //   slidesPerView: 2,
@@ -88,7 +94,7 @@ btnOpenPhoto.addEventListener('click', OpenPhoto);
 btnClose.addEventListener('click', Close);
 
 function OpenForm() {
-  alert('oooo')
+  alert('oooo');
   contextForm.style.display = 'block';
   contextPhoto.style.display = 'none';
   contextBacket.style.display = 'none';
