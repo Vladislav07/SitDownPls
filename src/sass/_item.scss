@@ -31,6 +31,7 @@
     grid-column: 2;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: relative;
   }
 
@@ -101,6 +102,7 @@
 
   &__btn__toBasket {
     margin-right: auto;
+    margin-bottom: auto;
     @include btnSecondary;
     border: none;
   }
@@ -112,10 +114,14 @@
 
 .record {
   display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-rows: 1fr;
   align-items: baseline;
-  grid-template-columns:max-content  216px;
+  justify-content: space-between;
+   width: 544px;
 
   &__name {
+    grid-row: 1;
     grid-column: 1;
     font-weight: 400;
     font-size: 14px;
@@ -124,15 +130,14 @@
   }
 
   &__separator {
-    display: none;
+    grid-row: 1;
     grid-column: 2;
-    font-size: 2px;
-    line-height: 0px;
-    letter-spacing: 0.5em;
-    color: $color-grey;
+    display: inline-block;
+    border-bottom: 1px dotted #999;
   }
 
   &__value {
+    grid-row: 1;
     grid-column: 3;
     font-weight: 400;
     font-size: 14px;

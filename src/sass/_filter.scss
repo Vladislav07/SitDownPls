@@ -69,8 +69,18 @@
 
 .filter {
 
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+
   &__section {
     margin-bottom: 26px;
+  }
+
+  &__section:nth-child(5) {
+    margin-bottom: auto;
   }
 
   &__progress-bar{

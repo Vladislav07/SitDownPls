@@ -2,9 +2,12 @@
 @import 'var';
 
 .breadcrumb {
+  width: 1280px;
   padding: 0 0.5rem;
+  margin: 0 auto;
+  margin-bottom: 32px;
 
-  ul {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -12,7 +15,7 @@
     padding: 0;
   }
 
-  li:not(:last-child)::after {
+  &__item:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
     content: '/';
@@ -25,11 +28,11 @@
     line-height: 100%;
   }
 
-  a:not(:last-child) {
+  &__item:not(:last-child) {
     color:#999;
   }
 
-  a:last-child {
-    color: $color-primary_shade;
+  &__item:last-child {
+   // color: $color-primary_shade;
   }
 }
