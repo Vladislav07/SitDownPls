@@ -10,29 +10,26 @@ const swiper = new Swiper('.hero__swiper', {
   },
 });
 
-
-
 const swiperOffers = new Swiper('.offers__container', {
-
-  slidesPerGroup: 2,
-  slidesPerView: 3,
+  slidesPerGroup: 3,
+  slidesPerView: 1,
   spaceBetween: 32,
-  // breakpoints: {
-  //   1280: {
-  //     slidesPerView: 2,
-  //   },
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+    },
 
-  //   992: {
-  //     slidesPerView: 3,
-  //   },
-  //   575: {
-  //     slidesPerView: 2,
-  //   },
-  //   275: {
-  //     slidesPerView: 1,
-  //     slidesPerGroup: 1,
-  //   },
-  // },
+    992: {
+      slidesPerView: 3,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    275: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+  },
   navigation: {
     nextEl: '.offers__container > .swiper-button-next',
     prevEl: '.offers__container > .swiper-button-prev',
@@ -65,7 +62,6 @@ const swiperUseful = new Swiper('.useful__container', {
   },
 });
 
-
 // const swiperProducts = new Swiper('.products__swiper', {
 //   slidesPerView: 2,
 //  // loop: true,
@@ -88,21 +84,20 @@ const contextBacket = document.querySelector('.modal__content__two');
 const contextPhoto = document.querySelector('.modal__content__three');
 const dialog = document.querySelector('.modal__dialog');
 
-if(btnOpenBuy){
+if (btnOpenBuy) {
   btnOpenBuy.addEventListener('click', OpenForm);
 }
-if(btnOpenClick){
+if (btnOpenClick) {
   btnOpenClick.addEventListener('click', OpenBacket);
 }
 
-if(btnOpenPhoto){
-btnOpenPhoto.addEventListener('click', OpenPhoto);
+if (btnOpenPhoto) {
+  btnOpenPhoto.addEventListener('click', OpenPhoto);
 }
 
-if(btnClose){
-btnClose.addEventListener('click', Close);
+if (btnClose) {
+  btnClose.addEventListener('click', Close);
 }
-
 
 function OpenForm() {
   alert('oooo');
