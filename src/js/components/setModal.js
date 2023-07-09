@@ -24,7 +24,6 @@ if (btnClose) {
 }
 
 function OpenForm() {
-  alert('oooo');
   contextForm.style.display = 'block';
   contextPhoto.style.display = 'none';
   contextBacket.style.display = 'none';

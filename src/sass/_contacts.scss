@@ -70,25 +70,11 @@
   }
 
   &__btn {
-    @include btnPrimary;
     margin-right: auto;
     margin-bottom: 12px;
-    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+
   }
 
-  &__btn:hover:not(:focus) {
-    background-color: $color-primary_ligth;
-  }
-
-  &__btn:focus {
-    outline-color: #ce4307;
-    outline: 3px solid $color-primary;
-    outline-offset: -3px;
-  }
-
-  &__btn:active {
-    background-color: $color-primary;
-  }
 
   &__convention {
     font-weight: 400;

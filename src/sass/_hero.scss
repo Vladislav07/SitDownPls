@@ -10,7 +10,7 @@
     padding: 80px 320px;
     padding: 0;
 
-    .swiper-wrapper{
+    .swiper-wrapper {
       height: 400px;
     }
   }
@@ -71,23 +71,7 @@
   }
 
   &__btn {
-    @include btnPrimary;
     flex-wrap: nowrap;
-    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
-  }
-
-  &__btn:hover:not(:focus) {
-    background-color: red;
-  }
-
-  &__btn:focus {
-    outline-color: #ce4307;
-    outline: 3px solid $color-primary;
-    outline-offset: -3px;
-  }
-
-  &__btn:active {
-    background-color: red;
   }
 
   &__btn__bottom {
@@ -175,10 +159,10 @@
 @media (max-width: $media-sm) {
   .hero {
     display: flex;
-      flex-direction: column;
+    flex-direction: column;
     &__container {
       max-width: 320px;
-      height: 204px ;
+      height: 204px;
       margin-bottom: 24px;
 
       .swiper {

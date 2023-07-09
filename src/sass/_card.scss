@@ -53,20 +53,25 @@
 
   &__btn {
     @include btnSecondary;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
   }
 
   &__btn:hover:not(:focus) {
     background-color: $color-primary_ligth;
-    outline: none;
+    color: white;
   }
 
   &__btn:focus {
-    outline-color: #ce4307;
-    background-color: $color-primary;
+    background-color: $color-primary_ligth;
+    outline:  2px solid $color-primary-shade;
+    outline-offset: -3px;
+    color: white;
   }
 
   &__btn:active {
-    background-color: $color-primary;
+    background-color: $color-primary_shade;
+    color: white;
   }
 
   &__descr__alternative {

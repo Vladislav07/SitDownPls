@@ -1,6 +1,6 @@
-
 @use 'element';
 @import 'var';
+@import 'mixin';
 
 @font-face {
   font-family: 'Open Sans';
@@ -78,6 +78,7 @@ img {
   cursor: pointer;
 }
 
+ul,
 .list-reset {
   margin: 0;
   padding: 0;
@@ -104,6 +105,26 @@ label {
 body {
   position: relative;
 }
+
+.btn-primary {
+  @include btnPrimary;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.btn-primary:hover:not(:focus) {
+  background-color: $color-primary_ligth;
+}
+
+.btn-primary:focus {
+  background-color: $color-primary_ligth;
+  outline:  2px solid $color-primary-shade;
+  outline-offset: -3px;
+}
+
+.btn-primary:active {
+  background-color: $color-primary_shade;
+}
+
 
 
 

@@ -58,7 +58,26 @@
     @include btnSecondary;
     justify-self: end;
     margin-right: auto;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
   }
+  &__btn:hover:not(:focus) {
+    background-color: $color-primary_ligth;
+    color: white;
+  }
+
+  &__btn:focus {
+    background-color: $color-primary_ligth;
+    outline:  2px solid $color-primary-shade;
+    outline-offset: -3px;
+    color: white;
+  }
+
+  &__btn:active {
+    background-color: $color-primary_shade;
+    color: white;
+  }
+
 
   &__label {
     @include label;

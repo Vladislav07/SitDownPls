@@ -31,31 +31,13 @@
   }
 
   &__btn__bottom {
-    @include btnPrimary;
     align-self: center;
   }
 
-  &__btn {
-    @include btnSecondary;
-  }
-
-  &__btn:hover:not(:focus) {
-    background-color: $color-primary;
-    outline: none;
-  }
-
-  &__btn:focus {
-    outline-color: #ce4307;
-    background-color: $color-primary;
-  }
-
-  &__btn:active {
-    background-color: $color-primary_shade;
-  }
 
   &__descr__alternative {
     display: none;
-    max-width: 295px;
+   max-width: 295px;
     margin-bottom: auto;
     font-size: 16px;
     line-height: 22px;
