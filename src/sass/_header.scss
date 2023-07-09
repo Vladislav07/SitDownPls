@@ -55,6 +55,23 @@
         }
       }
     }
+
+    
+    .choices__inner:active {
+      color: $color-primary_shade;
+    }
+
+    .is-focused {
+      border-color: $color-primary;
+      background-color: $color-pink_ligth;
+    }
+
+    .is-open {
+      border-color: $color-primary;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+   
   }
 
   &__phone {
@@ -242,7 +259,7 @@
   min-width: 180px;
   justify-content: space-between;
   align-items: center;
-  margin-right: 30px;
+  //margin-right: 30px;
 
   &__title {
     width: 98px;
@@ -251,6 +268,7 @@
     font-weight: 400;
     color: $color-black;
   }
+
 }
 
 .search {

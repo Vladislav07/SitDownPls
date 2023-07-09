@@ -21,6 +21,11 @@
   padding-bottom: 0;
 }
 
+.is-open.choices[data-type*='select-one']::after {
+  display: none; 
+}  
+
+
 .choices__item--selectable {
   color: $color-primary;
   font-size: 16px;
