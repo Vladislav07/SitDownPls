@@ -12,6 +12,10 @@
 
     .swiper-wrapper {
       height: 400px;
+
+      .swiper-slide{
+         padding-left: 311px;
+      }
     }
   }
 
@@ -63,7 +67,7 @@
 
   &__title {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 51px;
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;

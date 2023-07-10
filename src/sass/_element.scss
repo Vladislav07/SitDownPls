@@ -78,7 +78,7 @@
  
 
   .swiper-button-prev {
-    top: 25px;
+    top: 17px;
     right: var(--swiper-navigation-sides-offset, 50px);
     left: auto;
   }
@@ -88,7 +88,8 @@
   }
 
   .swiper-button-next {
-    top: 25px;
+    top: 17px;
+    right: var(--swiper-navigation-sides-offset,3px);
   }
 
   .swiper-button-next::after {

@@ -15,11 +15,24 @@
   &__left.offer {
     width: 296px!important;
     height: 511px;
+    padding-bottom: 23px;
   }
 
   &__middle.offer {
     width: 624px!important;
     height: 511px;
+    align-content: space-between;
+    justify-content: space-between;
+
+    .offer__img {
+ 
+      padding-left: 60px;
+    }
+
+    .offer__content {
+      width: 217px;
+    }
+  
   }
 
   &__rigth.offer {
@@ -38,6 +51,7 @@
 
 .offer.swiper-slide {
   display: flex;
+  padding-bottom: 28px;
 }
 
 .offer {
@@ -49,6 +63,8 @@
   border-radius: 10px;
   background-color: $color-grey_ligth;
 
+
+
   &__title {
     margin-bottom: 24px;
     font-size: 24px;
@@ -59,12 +75,13 @@
 
   &__img {
     margin-bottom: 16px;
+  
   }
 
   &__price {
     display: flex;
     align-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   &__price__new {
@@ -105,7 +122,7 @@
 
   &__label {
     @include label;
-    top: 30px;
+    top: 31px;
     left: 0;
   }
 }

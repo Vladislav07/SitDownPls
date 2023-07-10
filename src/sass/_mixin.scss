@@ -39,7 +39,7 @@
 
 @mixin label {
   position: absolute;
-  padding: 7px 19px;
+  padding: 7px 29px;
   background-color: $color-secondary;
   font-size: 14px;
   line-height: 19px;
@@ -80,7 +80,7 @@
 
 @mixin btnPrimary {
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 100%;
   font-weight: 700;
   color: #fff;
@@ -99,12 +99,12 @@
 
 @mixin btnSecondary {
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 16px;
   font-weight: 600;
   color: $color-primary;
   background-color:#fff ;
-  padding: 19px 35px;
+  padding: 17px 35px;
   cursor: pointer;
   border:2px solid $color-primary;
 }
