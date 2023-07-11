@@ -22,7 +22,7 @@
     justify-self: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
   }
 
   &__logo {
@@ -39,8 +39,9 @@
   .refs {
     display: grid;
     grid-template-columns: repeat(4, max-content);
-    column-gap: 112px;
+    column-gap: 131px;
     justify-content: space-between;
+    padding-top: 3px;
 
     &__item {
       display: flex;

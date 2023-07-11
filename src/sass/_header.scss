@@ -368,7 +368,8 @@
     &__wrapper {
       padding-right: 36px;
       padding-left: 36px;
-      grid-template-columns: 187px 64px 401px 58px 242px;
+      row-gap: 35px;
+      grid-template-columns: 187px 64px 401px 58px 234px;
       grid-template-rows: 23px 28px 28px 60px;
     }
 
@@ -415,6 +416,13 @@
   .nav {
     &__item:not(:last-child) {
       margin-right: 41px;
+    }
+  }
+
+  .service{
+
+    &__items{
+      margin-bottom: 10px;
     }
   }
 }

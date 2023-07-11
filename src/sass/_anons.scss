@@ -10,14 +10,17 @@
     background-image: url('../img/Anons.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    padding: 150px 320px;
+    padding: 155px 310px;
   }
 
   &__title {
     width: 508px;
+    margin-bottom: 50px;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 47px;
     line-height: 120%;
+    color: #fff;
+
     span {
       font-family: 'Playfair Display';
       font-weight: 900;

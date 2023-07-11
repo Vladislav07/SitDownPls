@@ -85,8 +85,15 @@
 
 @media (max-width: $media-xl) {
   .hero {
+
+    margin-bottom: 69px;
+    
     &__container {
       max-width: 1024px;
+
+      .swiper-wrapper .swiper-slide {
+        padding-left: 36px;
+      }
     }
 
     &__slide__one {
@@ -131,7 +138,7 @@
 
     &__title {
       display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: 49px;
       font-weight: 700;
       font-size: 48px;
       line-height: 65px;
