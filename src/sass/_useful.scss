@@ -95,10 +95,15 @@
   }
 
   .article {
-    &__descr {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
+
+    &__content {
+      height: 250px;
+    
+      .article__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
 }

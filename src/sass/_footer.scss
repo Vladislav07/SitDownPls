@@ -115,7 +115,11 @@
     }
 
     .refs {
-      column-gap: 76px;
+      column-gap: 95px;
+
+      &__section {
+       // width: 150px;
+      }
     }
   }
 }

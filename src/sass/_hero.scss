@@ -13,8 +13,8 @@
     .swiper-wrapper {
       height: 400px;
 
-      .swiper-slide{
-         padding-left: 311px;
+      .swiper-slide {
+        padding-left: 311px;
       }
     }
   }
@@ -85,9 +85,8 @@
 
 @media (max-width: $media-xl) {
   .hero {
-
     margin-bottom: 69px;
-    
+
     &__container {
       max-width: 1024px;
 
@@ -151,6 +150,10 @@
   .hero {
     &__container {
       max-width: 768px;
+
+      .swiper-wrapper .swiper-slide {
+        padding-left: 71px;
+      }
     }
 
     &__slide__one {
@@ -164,6 +167,10 @@
     &__slide__three {
       background-image: url('/img/hero_three_768.jpg');
     }
+
+    &__btn {
+      padding: 22px 48px;
+    }
   }
 }
 
@@ -171,6 +178,7 @@
   .hero {
     display: flex;
     flex-direction: column;
+
     &__container {
       max-width: 320px;
       height: 204px;
@@ -178,6 +186,10 @@
 
       .swiper {
         margin-bottom: 32px;
+      }
+
+      .swiper-wrapper {
+        height: 210px;
       }
     }
 

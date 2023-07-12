@@ -201,6 +201,13 @@
       grid-template-rows: 332px 206px 206px;
     }
 
+    &__item {
+      img{
+        margin-bottom: 0;
+      }
+    }
+
+
     &__name {
       font-weight: 400;
       font-size: 16px;
