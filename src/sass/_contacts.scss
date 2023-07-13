@@ -122,6 +122,7 @@
 
 @media (max-width: $media-sm) {
   .contacts {
+    margin-bottom: 48px;
 
     &__container {
       max-width: 320px;
@@ -135,6 +136,11 @@
 
     &__image {
       display: none;
+    }
+
+    &__title{
+      font-size: 24px;
+      margin-bottom: 4px;
     }
 
   }

@@ -178,11 +178,16 @@
   .hero {
     display: flex;
     flex-direction: column;
+    margin-bottom: 69px;
 
     &__container {
       max-width: 320px;
       height: 204px;
-      margin-bottom: 24px;
+      margin-bottom: 38px;
+
+      .swiper-wrapper .swiper-slide {
+        padding-left: 30px;
+      }
 
       .swiper {
         margin-bottom: 32px;
@@ -247,6 +252,7 @@
     &__btn__bottom {
       display: inline-block;
       @include btnPrimary;
+      padding: 22px 99px;
       margin: 0 auto;
     }
   }

@@ -95,10 +95,13 @@
     &__card {
       grid-template-columns: repeat(2, 140px);
       grid-template-rows: 278px 278px 278px;
+      gap: 16px;
     }
 
     &__btn__bottom {
       @include btnPrimary-sm;
+      font-size: 16px;
+      padding: 22px 36px;
     }
 
   }

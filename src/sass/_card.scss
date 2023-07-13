@@ -122,6 +122,7 @@
 
     &__btn {
       @include btnSecondary-sm;
+      padding: 10px 21px;
     }
 
     img {

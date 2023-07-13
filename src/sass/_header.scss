@@ -502,6 +502,8 @@
 
 @media (max-width: $media-sm) {
   .header {
+    margin-bottom: 32px;
+    
     &__container {
       max-width: 320px;
       padding-top: 0;
@@ -544,6 +546,7 @@
       grid-column: 1 / span 2;
       grid-row: 1;
       justify-self: center;
+      align-self: center;
     }
 
     &__search {

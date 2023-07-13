@@ -75,14 +75,21 @@
       justify-content: space-between;
       background-image: url('../img/Anons_320.jpg');
       background-position: top;
-      padding: 12px 30px;
+      padding: 31px 14px;
       padding-bottom: 0;
     }
 
     &__title {
       width: 187px;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 16px;
+
+      span {
+        font-size: 24px;
+        font-weight: 900;
+      }
     }
+
+  
   }
 }
