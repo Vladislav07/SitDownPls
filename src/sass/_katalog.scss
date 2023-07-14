@@ -6,3 +6,12 @@
         margin-bottom: 18px;
     }
 }
+
+@media (max-width: $media-sm) {
+    .katalog{
+        .header {
+            margin-bottom: 32px;
+        }
+    }
+
+}

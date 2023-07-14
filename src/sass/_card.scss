@@ -17,6 +17,7 @@
   }
 
   &__content {
+    width: 100%;
     padding: 30px;
     padding-top: 0;
     display: flex;
@@ -92,6 +93,11 @@
 }
 
 @media (max-width: $media-xl) {
+  .card {
+  &__rating {
+    left: 32px;
+  }
+}
 }
 @media (max-width: $media-lg) {
 }
@@ -118,6 +124,10 @@
       position: absolute;
       top: 16px;
       left: 16px;
+
+      .star{
+        font-size: 13px;
+      }
     }
 
     &__btn {
