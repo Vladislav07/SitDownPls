@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   pagination: {
@@ -63,9 +62,24 @@ const swiperProducts = new Swiper('.products__swiper', {
   slidesPerGroup: 4,
   slidesPerView: 1,
   spaceBetween: 32,
+  breakpoints: {
+    1280: {
+      //  slidesPerGroup: 1,
+      slidesPerView: 4,
+    },
+
+    992: {
+      slidesPerView: 3,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    275: {
+      slidesPerView: 1,
+    },
+  },
   navigation: {
     nextEl: '.products__swiper > .swiper-button-next',
     prevEl: '.products__swiper > .swiper-button-prev',
   },
 });
-

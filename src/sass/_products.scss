@@ -26,6 +26,10 @@
     column-gap: 32px;
   }
 
+  .swiper-button-lock {
+    display: block;
+}
+
   &__slide__one {
     .products__card {
       .card:nth-child(n + 5) {
@@ -55,9 +59,20 @@
   }
 }
 
-@media (max-width: $media-sm) {
+@media (max-width: $media-xl) {
+  .products {
+    &__container {
+      width: 952px;
+    }
+  }
 }
+
 @media (max-width: $media-lg) {
+  .products {
+    &__container {
+      width: 624px;
+    }
+  }
 }
 @media (max-width: $media-sm) {
 }

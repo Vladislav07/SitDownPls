@@ -43,3 +43,10 @@
     padding-left: 2.5rem;
 }
 }
+
+@media (max-width: $media-lg) {
+  .breadcrumb {
+ 
+    padding-left: 4.5rem;
+}
+}

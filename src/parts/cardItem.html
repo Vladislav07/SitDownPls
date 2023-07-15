@@ -1,29 +1,41 @@
 <section id="CardItem" class="item">
   <div class="item__container">
     <div class="item__wrapper">
-      <div class="item__left">
+      <picture>
+        <source srcset="img/item_320.png" media="(max-width:576px)" />
+        <img class="item__photoMain" src="img/item.jpg" alt="" />
+      </picture>
+      <div class="item__sale">
+        <div class="item__rating">
+          @@include('./star.html',{ "count":"5,0"})
+        </div>
+        <h4 class="item__name">Диван тканевый прямой &laquo;D-31&raquo;</h4>
+        <span class="item__alt"
+          >Мини 120&nbsp;см без ящика Stark синий (Рогожка)</span
+        >
+        <div class="item__price">28&nbsp;490 руб</div>
+        <button class="item__btn__buy">Купить в&nbsp;один клик</button>
+        <button class="item__btn__toBasket">+ Добавить в&nbsp;корзину</button>
+      </div>
+      <div class="item__photoTop">
         <picture>
           <source srcset="img/item_320.png" media="(max-width:576px)" />
-          <img class="item__photoMain" src="img/item.jpg" alt="" />
+          <img src="img/item-m-1.png" alt="" />
         </picture>
-        <div class="item__photoTop">
-          <picture>
-            <source srcset="img/item_320.png" media="(max-width:576px)" />
-            <img src="img/item-m-1.png" alt="" />
-          </picture>
-          <picture>
-            <source srcset="img/item_320.png" media="(max-width:576px)" />
-            <img src="img/item-m-2.png" alt="" />
-          </picture>
-          <picture>
-            <source srcset="img/item_320.png" media="(max-width:576px)" />
-            <img src="img/item-m-3.png" alt="" />
-          </picture>
-          <picture>
-            <source srcset="img/item_320.png" media="(max-width:576px)" />
-            <img src="img/item-m-4.png" alt="" />
-          </picture>
-        </div>
+        <picture>
+          <source srcset="img/item_320.png" media="(max-width:576px)" />
+          <img src="img/item-m-2.png" alt="" />
+        </picture>
+        <picture>
+          <source srcset="img/item_320.png" media="(max-width:576px)" />
+          <img src="img/item-m-3.png" alt="" />
+        </picture>
+        <picture>
+          <source srcset="img/item_320.png" media="(max-width:576px)" />
+          <img src="img/item-m-4.png" alt="" />
+        </picture>
+      </div>
+      <div class="item__characteristics ">
         <h5 class="item__titleDescr">Опорный механизм</h5>
         <p class="item__descr">
           Опорный механизм напоминает пантограф, к&nbsp;которому добавили
@@ -36,136 +48,125 @@
           Требуется чуть больше силы, чтобы разложить диван, но&nbsp;подросток
           справится.
         </p>
-        <div class="item__photoBottom">
-          <picture>
-            <source srcset="img/item_320.png" media="(max-width:576px)" />
-            <img src="img/item-b-1.jpg" alt="" />
-          </picture>
-          <picture>
-            <source srcset="img/item_320.png" media="(max-width:576px)" />
-            <img src="img/item-b-2.jpg" alt="" />
-          </picture>
-        </div>
       </div>
-      <div class="item__rigth">
-        <div class="item__rating">
-          @@include('./star.html',{ "count":"5,0"})
-        </div>
-        <h4 class="item__name">Диван тканевый прямой &laquo;D-31&raquo;</h4>
-        <span class="item__alt"
-          >Мини 120&nbsp;см без ящика Stark синий (Рогожка)</span
-        >
-        <div class="item__price">28&nbsp;490 руб</div>
-        <button class="item__btn__buy">Купить в&nbsp;один клик</button>
-        <button class="item__btn__toBasket">+ Добавить в&nbsp;корзину</button>
-        <ul class="item__records">
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Гарантия </span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">18 месяцев</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Артикул</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">AAA41269004</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Длина</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">163 см</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Высота</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">90 см</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Глубина </span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">108 см</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Спальное&nbsp;место </span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">200 см х 125 см</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Высота посадки</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">45 см</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Механизм</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Опорный</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Тип обивки</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Рогожка</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Цвет </span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Синий</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Наполнитель</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Независимый пружинный блок</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Материал каркаса</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Металл. рама с дерев. латами</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Количество мест</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Двухместные</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Категория </span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Прямые тканевые диваны</span>
-          </li>
-          <li class="item__record record">
-            <div class="record__wrapper">
-              <span class="record__name">Возврат</span>
-              <span class="record__separator"></span>
-            </div>
-            <span class="record__value">Условия</span>
-          </li>
-        </ul>
+      <div class="item__photoBottom">
+        <picture>
+          <source srcset="img/item_320.png" media="(max-width:576px)" />
+          <img src="img/item-b-1.jpg" alt="" />
+        </picture>
+        <picture>
+          <source srcset="img/item_320.png" media="(max-width:576px)" />
+          <img src="img/item-b-2.jpg" alt="" />
+        </picture>
       </div>
+      
+      <ul class="item__records">
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Гарантия </span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">18 месяцев</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Артикул</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">AAA41269004</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Длина</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">163 см</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Высота</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">90 см</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Глубина </span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">108 см</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Спальное&nbsp;место </span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">200 см х 125 см</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Высота посадки</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">45 см</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Механизм</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Опорный</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Тип обивки</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Рогожка</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Цвет </span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Синий</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Наполнитель</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Независимый пружинный блок</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Материал каркаса</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Металл. рама с дерев. латами</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Количество мест</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Двухместные</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Категория </span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Прямые тканевые диваны</span>
+        </li>
+        <li class="item__record record">
+          <div class="record__wrapper">
+            <span class="record__name">Возврат</span>
+            <span class="record__separator"></span>
+          </div>
+          <span class="record__value">Условия</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
