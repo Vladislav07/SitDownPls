@@ -2,7 +2,7 @@
 @import 'var';
 
 .item {
-  margin-bottom: 70px;
+  margin-bottom: 85px;
 
   &__container {
     width: 1280px;
@@ -65,15 +65,18 @@
     color: $color-black;
   }
 
-  &__descr:nth-child(3) {
-    margin-bottom: 7px;  
+  &__descr:nth-child(4) {
+    margin-bottom: 7px;
   }
 
-  &__descr::nth-child(4) {
+  &__descr:nth-child(5) {
     margin-bottom: auto;
   }
 
   &__photoBottom {
+    img {
+      margin-right: 26px;
+    }
   }
 
   &__rating {
@@ -100,7 +103,7 @@
   }
 
   &__price {
-    margin-bottom: 21px;
+    margin-bottom: 19px;
     font-weight: 400;
     font-size: 36px;
     line-height: 130%;
@@ -109,8 +112,11 @@
 
   &__btn__buy {
     margin-right: auto;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     @include btnPrimary;
+    padding: 21px 35px;
+    font-size: 15px;
+    list-style: 16px;
   }
 
   &__btn__toBasket {
@@ -120,6 +126,8 @@
     @include btnSecondary;
     border: none;
     padding-top: 0;
+    font-size: 16px;
+    padding-left: 27px;
   }
 
   &__records {
@@ -129,11 +137,18 @@
 
 .record {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: 328px max-content;
   grid-template-rows: 1fr;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 544px;
+  justify-content: flex-start;
+
+  &__wrapper {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr;
+    align-content: baseline;
+  }
 
   &__name {
     grid-row: 1;
@@ -147,13 +162,16 @@
   &__separator {
     grid-row: 1;
     grid-column: 2;
+    width: 100%;
     display: inline-block;
+    align-self: center;
+    padding-top: 11px;
     border-bottom: 1px dotted #999;
   }
 
   &__value {
     grid-row: 1;
-    grid-column: 3;
+    grid-column: 2;
     font-weight: 400;
     font-size: 14px;
     line-height: 180%;
@@ -170,6 +188,18 @@
     &__wrapper {
       grid-template-columns: 514px 405px;
       grid-template-rows: 706px;
+    }
+
+    &__photoMain {
+      margin-bottom: 12px;
+    }
+
+    &__photoTop {
+      padding-top: 9px;
+      padding-bottom: 7px;
+
+      img:nth-child(4) {
+      }
     }
   }
 

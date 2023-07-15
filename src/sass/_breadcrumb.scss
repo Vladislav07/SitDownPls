@@ -36,3 +36,10 @@
    // color: $color-primary_shade;
   }
 }
+
+@media (max-width: $media-xl) {
+  .breadcrumb {
+ 
+    padding-left: 2.5rem;
+}
+}
