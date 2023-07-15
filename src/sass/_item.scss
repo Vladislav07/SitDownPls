@@ -20,7 +20,7 @@
     justify-content: space-between;
 
     picture{
-      display: contents;
+      display: '';
     }
   }
 
@@ -312,6 +312,10 @@
       grid-row: 2;
       grid-column: 1;
       flex-direction: row;
+
+      picture:last-child{
+        display: none;
+      }
     }
 
     &__characteristics {
