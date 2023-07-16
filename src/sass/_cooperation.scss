@@ -2,7 +2,7 @@
 @import 'var';
 
 .cooperation {
-  margin-bottom: 70px;
+  margin-bottom: 59px;
 
   &__container {
     width: 1280px;
@@ -11,13 +11,18 @@
   }
 
   &__article {
-    width: 842px;
+    width: 840px;
     background-color: #fff;
     margin-bottom: 32px;
   }
 
+  &__article--b {
+    margin-bottom: 22px;
+  }
+
   &__article:nth-child(3) {
     width: 624px;
+    margin-bottom: 21px;
 
     .article__parts {
       padding-left: 37px;
@@ -26,6 +31,7 @@
   }
 
   &__article:nth-child(4) {
+    margin-bottom: 21px;
     .article__parts {
       flex-direction: column;
     }
@@ -68,16 +74,24 @@
     margin-bottom: 12px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 180%;
     color: $color-grey;
+  }
+
+  &__descr--important {
+    line-height: 150%;
+  }
+
+  &__descr--m {
+    margin-bottom: 24px;
   }
 
   &__marker {
     margin-bottom: 12px;
-    margin-right: 12px;
+    margin-right: 8px;
     font-weight: 600;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
     color: $color-secondary;
   }
 }
@@ -98,7 +112,80 @@
   }
 }
 
-@media (max-width: $media-sm) {}
-@media (max-width: $media-lg) {}
-@media (max-width: $media-sm) {}
+@media (max-width: $media-xl) {
+  .cooperation {
+    &__container {
+      width: 843px;
+      margin: 0;
+      margin-right: auto;
+      padding-left: 36px;
+    }
+    .article__descr--m {
+      margin-bottom: 13px;
+    }
+  }
+}
+@media (max-width: $media-lg) {
+  .cooperation {
+    &__container {
+      width: 624px;
+      margin: 0 auto;
+      padding: 0;
+    }
 
+    &__article {
+      width: 624px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: $media-sm) {
+  .cooperation {
+    margin-bottom: 70px;
+
+    &__container {
+      width: 296px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__article {
+      width: 296px;
+    }
+
+    &__article:nth-child(3) {
+      width: 294px;
+      margin-bottom: 17px;
+    }
+  }
+
+  .article {
+    &__title {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+
+    &__title--t {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  .note {
+    width: 296px;
+
+    &__descr {
+      font-size: 16px;
+      width: 244px;
+    }
+    img {
+      margin-right: 16px;
+    }
+  }
+}

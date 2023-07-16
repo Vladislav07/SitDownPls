@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="options">
     @@include('./parts/header.html') 
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ul class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="#">Главная</a></li>
+          <li class="breadcrumb__item"><a href="#">Сотрудничество</a></li>
+      </ul>
+  </nav>
     @@include('./parts/cooperation.html')
     @@include('./parts/footer.html')
 

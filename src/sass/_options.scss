@@ -1,0 +1,20 @@
+@import 'var';
+@import 'mixin';
+
+.options{
+    .header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: $media-sm) {
+    .options{
+
+        .header {
+            margin-bottom: 32px;
+        }
+        .breadcrumb{
+            display: none;
+        }
+    }
+}

@@ -28,7 +28,7 @@
 
   .swiper-button-lock {
     display: block;
-}
+  }
 
   &__slide__one {
     .products__card {
@@ -75,22 +75,40 @@
   }
 }
 @media (max-width: $media-sm) {
-
   .products {
-    
+    margin-bottom: 65px;
+
     &__container {
       width: 296px;
     }
 
     .swiper {
       height: 381px;
+
+      &__container {
+
+        .swiper-button-prev {
+          top: 367px;
+          bottom: auto;
+          right: 54%;
+          left: auto;
+        }
+
+        .swiper-button-next {
+          top: 367px;
+          bottom: auto;
+          right: auto;
+          left: 54%;
+        }
+      }
     }
 
-    &__card {
-      display: grid;
-      grid-template-columns: 140px 140px 140px 140px ;
-      grid-template-rows: 278px;
-      column-gap: 16px;
+      &__card {
+        display: grid;
+        grid-template-columns: 140px 140px 140px 140px;
+        grid-template-rows: 278px;
+        gap: 16px;
+      }
     }
   }
-}
+
