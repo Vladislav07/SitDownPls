@@ -13,30 +13,28 @@
   }
 
   &__left.offer {
-    width: 296px!important;
+    width: 296px !important;
     height: 511px;
     padding-bottom: 23px;
   }
 
   &__middle.offer {
-    width: 624px!important;
+    width: 624px !important;
     height: 511px;
     align-content: space-between;
     justify-content: space-between;
 
     .offer__img {
- 
       padding-left: 60px;
     }
 
     .offer__content {
       width: 217px;
     }
-  
   }
 
   &__rigth.offer {
-    width: 296px!important;
+    width: 296px !important;
     height: 511px;
   }
 
@@ -63,8 +61,6 @@
   border-radius: 10px;
   background-color: $color-grey_ligth;
 
-
-
   &__title {
     margin-bottom: 24px;
     font-size: 24px;
@@ -75,7 +71,6 @@
 
   &__img {
     margin-bottom: 16px;
-  
   }
 
   &__price {
@@ -107,14 +102,14 @@
     background-color: $color-primary_ligth;
     color: white;
   }
-  
+
   &__btn:focus {
     background-color: $color-primary_ligth;
-    outline:  2px solid $color-primary-shade;
+    outline: 2px solid $color-primary-shade;
     outline-offset: -3px;
     color: white;
   }
-  
+
   &__btn:active {
     background-color: $color-primary_shade;
     color: white;
@@ -148,7 +143,7 @@
     }
 
     &__middle.offer {
-      width: 296px!important;
+      width: 296px !important;
     }
   }
 

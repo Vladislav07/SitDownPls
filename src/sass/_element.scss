@@ -153,17 +153,21 @@
 @media (max-width: $media-sm) {
   .swiper-container {
     .swiper-button-prev {
-      top: 367px;
-      bottom: auto;
+      top: auto;
+     bottom: -6px;
       right: 54%;
       left: auto;
     }
   
     .swiper-button-next {
-         top: 367px;
-          bottom: auto;
+         top: auto;
+          bottom: -6px;
           right: auto;
           left: 53%;
+
+          svg{
+            width: 100%;
+          }
     }
   
   
