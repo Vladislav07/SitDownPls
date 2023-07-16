@@ -6,3 +6,15 @@
         margin-bottom: 18px;
     }
 }
+
+@media (max-width: $media-sm) {
+    .subject{
+        .breadcrumb{
+            display: none;
+        }
+        
+        .header {
+            margin-bottom: 32px;
+        }
+    }
+}

@@ -75,4 +75,22 @@
   }
 }
 @media (max-width: $media-sm) {
+
+  .products {
+    
+    &__container {
+      width: 296px;
+    }
+
+    .swiper {
+      height: 381px;
+    }
+
+    &__card {
+      display: grid;
+      grid-template-columns: 140px 140px 140px 140px ;
+      grid-template-rows: 278px;
+      column-gap: 16px;
+    }
+  }
 }

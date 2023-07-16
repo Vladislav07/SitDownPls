@@ -286,7 +286,7 @@
 
     &__wrapper {
       grid-template-columns: 296px;
-      grid-template-rows: 116px 81px 230px 307px 64px 607px;
+      grid-template-rows: 116px 81px 246px 323px 79px 607px;
       row-gap: 16px;
     }
 
@@ -298,13 +298,16 @@
     &__sale {
       grid-row: 3;
       grid-column: 1;
-      padding-top: 0;
+      padding-top: 1px;
     }
 
     &__photoTop {
+      padding-top: 3px;
       grid-row: 2;
       grid-column: 1;
       flex-direction: row;
+      justify-content: space-between;
+      padding-left: 10px;
 
       picture:last-child {
         display: none;
@@ -313,8 +316,10 @@
 
     &__characteristics {
       grid-column: 1;
-      grid-row: 6;
+      grid-row: 4;
+      width: 295px;
       padding: 0;
+ 
     }
 
     &__titleDescr {
@@ -337,16 +342,64 @@
     }
 
     &__photoBottom {
-      grid-row: 4;
+      grid-row: 5;
       grid-column: 1;
       padding: 0;
       justify-content: left;
     }
 
     &__records {
-      grid-row: 5;
+      grid-row: 6;
       grid-column: 1;
       padding: 0;
+    }
+
+    &__name {
+      margin-bottom: 9px;
+      font-size: 16px;
+      line-height: 20.2px;
+    }
+
+    &__alt {
+      margin-bottom: 15px;
+      width: 244px;
+    }
+
+    &__price {
+      font-size: 24px;
+      line-height: 130%;
+      margin-bottom: 15px;
+    }
+
+    &__btn__buy {
+      margin: 0;
+      margin-bottom: 17px;
+      padding: 20px 35px;
+    }
+
+    .item__btn__toBasket {
+      margin-right: 0;
+     padding-left: 3px;
+    }
+  }
+
+  .record {
+    margin-bottom: 8px;
+    
+    display: flex;
+    flex-direction: column;
+
+    &__separator {
+      display: none;
+    }
+
+    &__name {
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    &__value {
+      line-height: 19px;
     }
   }
 }
