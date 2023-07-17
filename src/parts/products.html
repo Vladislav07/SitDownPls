@@ -9,18 +9,104 @@
         <div class="swiper-button-next">
           @@include('./swiper_btn_rigth.html')
         </div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide products__slide__one">
-            <ul class="products__card">
-              @@include('./card.html')
-            </ul>
-          </div>
-          <div class="swiper-slide products__slide__two">
-            <ul class="products__card">
-              @@include('./card.html')
-            </ul>
-          </div>
-        </div>
+        <ul class="swiper-wrapper">
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_1_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_1.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван кожаный <br> &#8223;R-94&#8221;</h4>
+              <span class="card__price"> 94&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"5,0"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_2_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_2.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван апартековый <br> &#8223;T-75&#8221;</h4>
+              <span class="card__price"> 94&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"5,0"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_3_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_3.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван тканевый <br> &#8223;D-31&#8221;</h4>
+              <span class="card__price"> 90&nbsp;190 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"4,8"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_4_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_4.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван велюровый <br> &#8223;Y-68&#8221;</h4>
+              <span class="card__price"> 94&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"4,4"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_5_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_5.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван из шинила <br> “W-95”</h4>
+              <span class="card__price"> 85&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"4,7"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_6_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_6.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван флоковый <br> &#8223;G-41&#8221;</h4>
+              <span class="card__price"> 75&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"4,8"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_7_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_7.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван шиниловый <br> &#8223;V-43&#8221;</h4>
+              <span class="card__price"> 94&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"4,3"})</div>
+          </li>
+          <li class="card swiper-slide">
+            <picture>
+              <source srcset="img/sofa_8_320.png" media="(max-width:576px)" />
+              <img src="img/sofa_8.png" alt="" />
+            </picture>
+            <div class="card__content">
+              <h4 class="card__name">Диван велюровый <br> &#8223;S-99&#8221;</h4>
+              <span class="card__price"> 64&nbsp;990 руб </span>
+              <button class="card__btn">Купить</button>
+            </div>
+            <div class="card__rating">@@include('./star.html',{ "count":"4,0"})</div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -76,6 +76,7 @@ const swiperProducts = new Swiper('.products__swiper', {
     },
     275: {
       slidesPerView: 2,
+      spaceBetween: 16
     },
   },
   navigation: {
