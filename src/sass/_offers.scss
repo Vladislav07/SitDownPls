@@ -10,7 +10,9 @@
     padding: 0;
     position: relative;
     overflow: hidden;
-  }
+
+}
+  
 
   &__left.offer {
     width: 296px !important;
@@ -45,7 +47,10 @@
     font-weight: 400;
     color: #333;
   }
+
 }
+
+
 
 .offer.swiper-slide {
   display: flex;
