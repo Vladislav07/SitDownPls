@@ -76,21 +76,32 @@
 .swiper-container {
   .swiper-button-next,
   .swiper-button-prev {
-    width: 43px;
+    width: 32px;
     opacity: 1;
-  }
+   
+  
 
   svg g circle {
+    stroke: #a65cf0;
     transition: fill ease-in-out 3;
   }
 
+  svg g path {
+    stroke: #a65cf0;
+  }
+}
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
     .swiper__btn {
-      fill: #a65cf0;
-      g path {
+      g circle{
+        fill:aqua;
+        opacity: 0.5;
+      }
+        
+       g path {
         stroke: red;
       }
+      
     }
   }
 
@@ -113,7 +124,6 @@
     display: none;
   }
 }
-
 .swiper-wrapper {
   position: absolute;
   top: 0;
