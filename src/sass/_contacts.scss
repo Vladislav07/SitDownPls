@@ -61,12 +61,18 @@
     margin-bottom: 30px;
   }
 
-  &__input:hover:not(:focus)::placeholder {
-    color: $color-primary;
+  &__input:hover:not(:focus) {
+    background-color: $color-md_grey;
   }
 
   &__input:focus {
     outline: 1px solid $color-primary;
+    background-color: $color-pink_ligth;
+  }
+  &__input:active {
+    outline:1px solid $color-green_input;
+    color: $color-black;
+    background-color: $color-grey_ligth;
   }
 
   &__btn {

@@ -5,10 +5,11 @@
   margin-bottom: 70px;
 
   &__container {
-    width: 1920px;
+    max-width: 1900px;
     height: 400px;
     padding: 80px 320px;
     padding: 0;
+    margin: 0 auto;
 
     .swiper-wrapper {
       height: 400px;

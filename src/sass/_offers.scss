@@ -122,10 +122,27 @@
 
   &__label {
     @include label;
+    padding-left: 15px;
+    height: 34px;
+    width: 79px;
     top: 31px;
     left: 0;
+   
+    text-align:center;
   }
+&__label::after{
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: -26px;
+  left: 61px;
+  border: 17.5px solid transparent;
+  border-left: 13px solid #ff862f;
 }
+
+}
+
+
 
 .offer:nth-child(2n) {
   margin-right: 30px;

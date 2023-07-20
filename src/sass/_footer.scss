@@ -22,7 +22,6 @@
     justify-self: flex-start;
     display: flex;
     flex-direction: column;
-
   }
 
   &__logo {
@@ -66,6 +65,21 @@
     &__item:not(:last-child) {
       margin-bottom: 10px;
     }
+
+    &__item:hover:not(:focus) .refs__text{
+      color: $color-primary_ligth;
+    }
+
+    &__item:focus .refs__text{
+      color: $color-black;
+      background-color:$color-violet ;
+    }
+
+    &__item:active .refs__text{
+      color: $color-primary_shade;
+      background-color: transparent;
+    }
+    
   }
 
   &__sign {
@@ -85,16 +99,36 @@
     font-weight: 400;
   }
 
+  &__link {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__icon:hover:not(:focus) path {
     fill: $color-primary;
   }
 
-  &__icon:focus path {
-    fill: $color-primary_ligth;
+  &__link:focus .footer__icon path {
+    fill: white;
+  }
+
+  &__link:focus {
+    background-color: $color-primary_ligth;
   }
 
   &__icon:active path {
-    fill: $color-primary;
+    fill: $color-primary_shade;
+  }
+
+  &__link:active {
+    background-color: transparent;
+  }
+
+  &__link:active .footer__icon path {
+    fill: $color-primary_shade;
   }
 }
 
@@ -118,7 +152,7 @@
       column-gap: 95px;
 
       &__section {
-       // width: 150px;
+        // width: 150px;
       }
     }
   }
@@ -146,7 +180,7 @@
     }
 
     .refs {
-     column-gap: 39px;
+      column-gap: 39px;
     }
   }
 }
